@@ -14,4 +14,4 @@ if (!isDedicated) then
 //add respawn pos - players always spawn at the nearest spawnpos. parameters:
 //[[position] OR global object name for dynamic position, offset (radius in m, 0 for exact positioning)] 	
 gnrf_respawnInfo = [];
-gnrf_respawnInfo set [0, [hunter, 10]]; 
+gnrf_respawnInfo set [0, [hunter, 10], [atv1, 10],[atv2, 10]]; 

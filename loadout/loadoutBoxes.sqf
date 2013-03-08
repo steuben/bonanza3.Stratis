@@ -36,8 +36,9 @@
 			// Soft Covers
 			box addItemCargo ["H_MilCap_mcamo", 10];
 			box addItemCargo ["H_Cap_brn_SERO", 10];
-			box addItemCargo ["H_Booniehat_khk", 10];
-			box addItemCargo ["H_Booniehat_mcamo", 10];
+			//Textures are missing:
+			//box addItemCargo ["H_Booniehat_khk", 10];
+			//box addItemCargo ["H_Booniehat_mcamo", 10];
 
 			// Clothes
 			box addItemCargo ["U_B_CombatUniform_mcam_vest", 10];
@@ -60,6 +61,12 @@
 
 			box addMagazineCargo ["1Rnd_HE_Grenade_shell",100];
 			box addMagazineCargo ["HandGrenade",100];
+			box addMagazineCargo ["DemoCharge_Remote_Mag",100];
+			box addMagazineCargo ["SatchelCharge_Remote_Mag",100];
+			
+			// ITEMS
+			box addWeaponCargo ["Binocular",100];
+			box addWeaponCargo ["NVGoggles",100];
 
 // BOX 2
 
@@ -98,8 +105,9 @@
 			// Soft Covers
 			box2 addItemCargo ["H_MilCap_mcamo", 10];
 			box2 addItemCargo ["H_Cap_brn_SERO", 10];
-			box2 addItemCargo ["H_Booniehat_khk", 10];
-			box2 addItemCargo ["H_Booniehat_mcamo", 10];
+			//Textures are missing:
+			//box2 addItemCargo ["H_Booniehat_khk", 10];
+			//box2 addItemCargo ["H_Booniehat_mcamo", 10];
 
 			// Clothes
 			box2 addItemCargo ["U_B_CombatUniform_mcam_vest", 10];
@@ -121,3 +129,10 @@
 
 			box2 addMagazineCargo ["1Rnd_HE_Grenade_shell",100];
 			box2 addMagazineCargo ["HandGrenade",100];
+			box2 addMagazineCargo ["DemoCharge_Remote_Mag",100];
+			box2 addMagazineCargo ["SatchelCharge_Remote_Mag",100];
+			
+			// ITEMS
+			box2 addWeaponCargo ["Binocular",100];
+			box2 addWeaponCargo ["NVGoggles",100];
+			
