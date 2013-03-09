@@ -4,6 +4,11 @@ if ((paramsArray select 0) == 1) then
 	debugModeOn = true;
 };
 
+if (isNil "gnrf_debug_posArray") then 
+{
+	gnrf_debug_posArray = [];
+};
+
 ////Action Menu
 
 //show debugOptions
@@ -34,7 +39,6 @@ _coordMode_act = player addAction [("<t color=""#1F67CC"">" + ("Save Map Pos") +
 	
 	hintSilent "Map Position Mode enabled";
 	gnrf_debugCoords = true;
-	gnrf_debug_posArray = [];
 	if (!visibleMap) then {openMap true};
 	titleText ["Click on map to copy target coordinates to clipboard", "PLAIN DOWN"];
 	onMapSingleClick "
