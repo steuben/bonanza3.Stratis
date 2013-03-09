@@ -66,7 +66,7 @@
 			
 			// ITEMS
 			box addWeaponCargo ["Binocular",100];
-			box addWeaponCargo ["NVGoggles",100];
+			box addItemCargo ["NVGoggles",100];
 
 // BOX 2
 
@@ -134,7 +134,7 @@
 			
 			// ITEMS
 			box2 addWeaponCargo ["Binocular",100];
-			box2 addWeaponCargo ["NVGoggles",100];
+			box2 addItemCargo ["NVGoggles",100];
 
 
 loadout = box addAction ["Save Gear","loadout\saveLoadout.sqf"]; 
