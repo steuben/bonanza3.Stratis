@@ -12,3 +12,19 @@ gameType = COOP;
 minPlayers = 1;
 maxPlayers = 10;
 };
+
+
+
+//Parameters - Funfact: boolean values are treated as 0 (false) and 1(true) when checked in a script
+class Params
+{
+        class debugMode
+        {
+        //paramsArray[0]
+                title = "Debug Mode";
+                values[] = {0, 1};
+                texts[] = {"Disabled", "Enabled"};
+                default = 1;
+        };
+		
+};

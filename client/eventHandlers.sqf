@@ -1,4 +1,3 @@
-hint "eventhandlers";
 
 //player respawn
 player addEventHandler ["killed", 
