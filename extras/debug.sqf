@@ -4,13 +4,28 @@ if ((paramsArray select 0) == 1) then
 	debugModeOn = true;
 };
 
+//show debugOptions
+_debugMenu_act = player addAction [("<t color=""#4693FF"">" + ("Debug Options") + "</t>"),"gen_action.sqf",[{	
+	
+	gnrf_debugMenu = true;
+	
+}],0,false,false,"","(isNil 'gnrf_debugMenu') AND debugModeOn"];
+
+//hide debugOptions
+_debugHideMenu_act = player addAction [("<t color=""#4693FF"">" + ("Hide Debug Options") + "</t>"),"gen_action.sqf",[{	
+	
+	gnrf_debugMenu = nil;
+	
+}],0,false,true,"","gnrf_debugMenu AND debugModeOn"];
+
+
 //execute code from clipboard
 _testCode_act = player addAction [("<t color=""#1F67CC"">" + ("Test Code") + "</t>"),"gen_action.sqf",[{
 	
 	_string = copyFromClipboard;
 	call compile _string;
 	
-}],0,false, false,"","debugModeOn"];
+}],0,false, false,"","gnrf_debugMenu AND debugModeOn"];
 
 
 _coordMode_act = player addAction [("<t color=""#1F67CC"">" + ("Save Map Pos") + "</t>"),"gen_action.sqf",[{	
@@ -26,5 +41,5 @@ _coordMode_act = player addAction [("<t color=""#1F67CC"">" + ("Save Map Pos") +
 	true;
 	";
 	
-}],0,false, true,"","debugModeOn"]
+}],0,false, true,"","gnrf_debugMenu AND debugModeOn"]
 
