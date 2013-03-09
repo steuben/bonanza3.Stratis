@@ -34,6 +34,7 @@ player addBackpack _backpack;
 {player addSecondaryWeaponItem _x} forEach _secondaryWeaponItems;
 {player addHandgunItem _x} forEach _handgunItems;
 {player addItem _x} forEach _backpackItems;
+player addWeapon "ItemGPS";
 
 reload player;
 
