@@ -1,8 +1,4 @@
 
-
-opforCenter = createCenter EAST;
-
-
 // OBJECTIVES
 		
 		// Assault Type A
