@@ -1,6 +1,7 @@
 
 
 [] execVM "extras\extrasInit.sqf";
+[] execVM "objectives\objectivesInit.sqf";
 
 // Loadouts
 if (player == steuben) then
@@ -16,6 +17,7 @@ if (player == gnarfo) then
 [] execVM "loadout\loadoutBoxes.sqf";
 
 [] execVM "extras\debug.sqf";
+
 
 
 
