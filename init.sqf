@@ -1,5 +1,8 @@
 
+// Config
+opforCenter = createCenter EAST;
 
+// Scripts
 [] execVM "extras\extrasInit.sqf";
 [] execVM "objectives\objectivesInit.sqf";
 
