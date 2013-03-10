@@ -10,6 +10,11 @@ if (!isDedicated) then
 	[] execVM "extras\mapTool.sqf";
 	
 };
+
+if (isServer) then 
+{
+	gnrf_fnc_partrolWpGen = compile preProcessFileLineNumbers "objectives\patrolWpGen.sqf";
+};
 	
 //define respawn position(s)	
 //add respawn pos - players always spawn at the nearest spawnpos. parameters:

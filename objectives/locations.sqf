@@ -6,4 +6,3 @@ gnrf_campRogainTerrain = "outpost";
 
 gnrf_campRogainInfSpawn = [[5025.22,5918.99,208.809]];
 
-_wpPos = gnrf_campRogainInfPos select (random (count gnrf_campRogainInfPos -1));
