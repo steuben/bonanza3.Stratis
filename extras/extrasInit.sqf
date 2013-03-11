@@ -11,9 +11,14 @@ if (!isDedicated) then
 	
 };
 
+//////host//////
 if (isServer) then 
 {
 	gnrf_fnc_partrolWpGen = compile preProcessFileLineNumbers "objectives\patrolWpGen.sqf";
+	gnrf_fnc_assaultA = compile preProcessFileLineNumbers "objectives\assault_typeA\assaultInit.sqf";
+	[] execVM "objectives\locations.sqf";
+	
+	
 };
 	
 //define respawn position(s)	

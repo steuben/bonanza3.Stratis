@@ -9,6 +9,11 @@ if (isNil "gnrf_debug_posArray") then
 	gnrf_debug_posArray = [];
 };
 
+//set Friendly
+//WEST setFriend [EAST,1];
+//EAST setFriend [WEST,1];
+
+
 ////Action Menu
 
 //show debugOptions
@@ -25,7 +30,7 @@ _debugHideMenu_act = player addAction [("<t color=""#4693FF"">" + ("Hide Debug O
 	
 }],0,false,true,"","gnrf_debugMenu AND debugModeOn"];
 
-
+/*
 //execute code from clipboard
 _testCode_act = player addAction [("<t color=""#1F67CC"">" + ("Test Code") + "</t>"),"gen_action.sqf",[{
 	
@@ -33,6 +38,10 @@ _testCode_act = player addAction [("<t color=""#1F67CC"">" + ("Test Code") + "</
 	call compile _string;
 	
 }],0,false, false,"","gnrf_debugMenu AND debugModeOn"];
+
+//TEST
+_debugAct = player addAction [("<t color=""#1F67CC"">" + ("Test Code") + "</t>"), "extras\callFromClipboard.sqf", [], 1, false, true, "", "gnrf_debugMenu AND debugModeOn"];
+*/
 
 //copy Map coords to clipboard via mouseklick
 _coordMode_act = player addAction [("<t color=""#1F67CC"">" + ("Save Map Pos") + "</t>"),"gen_action.sqf",[{	
