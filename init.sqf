@@ -4,13 +4,8 @@ opforCenter = createCenter EAST;
 
 // Scripts
 [] execVM "extras\extrasInit.sqf";
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 //[] execVM "objectives\objectivesInit.sqf";
-=======
->>>>>>> ADDED: Mission Generator Framework
->>>>>>> origin/wurst
 
 // Loadouts
 if (player == steuben) then
