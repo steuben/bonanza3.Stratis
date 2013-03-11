@@ -66,18 +66,15 @@ class Mission
 				items=2;
 				class Item0
 				{
-<<<<<<< HEAD
+
 					position[]={3265.7488,5.4005404,5790.5088};
 					azimut=45;
-=======
-<<<<<<< HEAD
+
 					position[]={3256.4133,5.3831005,5791.6899};
 					azimut=-222.26489;
-=======
 					position[]={3265.7488,5.4005404,5790.5088};
 					azimut=45;
->>>>>>> ADDED: Mission Generator Framework
->>>>>>> origin/wurst
+
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
