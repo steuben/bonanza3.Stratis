@@ -15,7 +15,7 @@ switch (_location) do
 {
 	CASE "Camp Rogain": //add new case for each location
 	{
-		_patrolPositions = gnrf_campRogainPatrol;
+		_patrolPositions = gnrf_campRogainPatrol call bis_fnc_selectRandom;
 		_spawnPositions = gnrf_campRogainSpawn;
 		_terrain = gnrf_campRogainTerrain;
 		_name = gnrf_campRogainName;
