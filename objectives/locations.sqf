@@ -7,3 +7,4 @@ gnrf_campRogainName = "Camp Rogain";
 
 sleep 5;
 [] execVM "objectives\objectivesInit.sqf";
+
