@@ -10,8 +10,8 @@ if (isNil "gnrf_debug_posArray") then
 };
 
 //set Friendly
-//WEST setFriend [EAST,1];
-//EAST setFriend [WEST,1];
+WEST setFriend [EAST,1];
+EAST setFriend [WEST,1];
 
 
 ////Action Menu
