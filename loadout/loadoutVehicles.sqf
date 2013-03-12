@@ -17,7 +17,7 @@ loadout = atv2 addAction ["Save Gear","loadout\saveLoadout.sqf"];
 			
 			hunter addMagazineCargo ["HandGrenade",30];
 			hunter addMagazineCargo ["DemoCharge_Remote_Mag",10];
-			hunter addMagazineCargo ["SatchelCharge_Remote_Mag",10]
+			hunter addMagazineCargo ["SatchelCharge_Remote_Mag",10];
 			
 			hunter addWeaponCargo ["Binocular",100];
 			hunter addItemCargo ["NVGoggles",100];
@@ -51,7 +51,7 @@ loadout = atv2 addAction ["Save Gear","loadout\saveLoadout.sqf"];
 			
 			atv1 addMagazineCargo ["HandGrenade",30];
 			atv1 addMagazineCargo ["DemoCharge_Remote_Mag",10];
-			atv1 addMagazineCargo ["SatchelCharge_Remote_Mag",10]
+			atv1 addMagazineCargo ["SatchelCharge_Remote_Mag",10];
 			
 			// ATV 2
 			atv2 addItemCargo ["optic_Holosight", 10];
