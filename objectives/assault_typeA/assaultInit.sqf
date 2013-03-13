@@ -9,30 +9,120 @@ _guardPositions = _this select 4;
 
 _spawn = _spawnPositions call bis_fnc_selectRandom;
 
-// Create OPFOR Patrol Group
-
-_opforGroup = createGroup EAST;
-
-"O_Soldier_TL_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.5, "Major"];
-"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
-"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
-"O_Soldier_AR_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
-
-[_opforGroup, _patrolPositions] spawn gnrf_fnc_partrolWpGen;
+// Create OPFOR Patrol Groups
 		
+		// Group
+		_opforGroup = createGroup EAST;
+
+		"O_Soldier_TL_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.5, "Major"];
+		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
+		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
+		"O_Soldier_AR_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
+
+		[_opforGroup, _patrolPositions] spawn gnrf_fnc_partrolWpGen;
+		
+		
+		// Group
+		_opforGroup = createGroup EAST;
+
+		"O_Soldier_TL_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.5, "Major"];
+		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
+		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
+		"O_Soldier_AR_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
+		"O_soldier_M_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
+		"O_Soldier_LAT_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
+
+		[_opforGroup, _patrolPositions] spawn gnrf_fnc_partrolWpGen;
+		
+		
+		// Group
+		_opforGroup = createGroup EAST;
+
+		"O_Soldier_TL_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.5, "Major"];
+		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
+		"O_Soldier_LAT_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
+		"O_Soldier_AR_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
+
+		[_opforGroup, _patrolPositions] spawn gnrf_fnc_partrolWpGen;
+		
+
+/////////////////////////////////////////////////////////////////
 
 					
-// Create OPFOR Guard Group
-if (!isNil "_guardPositions") then 
-{
-	{
-		_opforGroup = createGroup EAST;
-		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
-		[_opforGroup, [_x]] spawn gnrf_fnc_partrolWpGen;
-		
-	} forEach _guardPositions;
+// Create OPFOR Guard Groups
 
-};
+		//Group
+		if (!isNil "_guardPositions") then 
+		{
+			{
+				_opforGroup = createGroup EAST;
+				"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
+				[_opforGroup, [_x]] spawn gnrf_fnc_partrolWpGen;
+				
+			} forEach _guardPositions;
+
+		};
+		
+		//Group
+		if (!isNil "_guardPositions") then 
+		{
+			{
+				_opforGroup = createGroup EAST;
+				"O_Soldier_AR_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
+				[_opforGroup, [_x]] spawn gnrf_fnc_partrolWpGen;
+				
+			} forEach _guardPositions;
+
+		};
+		
+		//Group
+		if (!isNil "_guardPositions") then 
+		{
+			{
+				_opforGroup = createGroup EAST;
+				"O_Soldier_LAT_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
+				[_opforGroup, [_x]] spawn gnrf_fnc_partrolWpGen;
+				
+			} forEach _guardPositions;
+
+		};
+		
+		//Group
+		if (!isNil "_guardPositions") then 
+		{
+			{
+				_opforGroup = createGroup EAST;
+				"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
+				[_opforGroup, [_x]] spawn gnrf_fnc_partrolWpGen;
+				
+			} forEach _guardPositions;
+
+		};
+		
+		//Group
+		if (!isNil "_guardPositions") then 
+		{
+			{
+				_opforGroup = createGroup EAST;
+				"O_Soldier_TL_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
+				[_opforGroup, [_x]] spawn gnrf_fnc_partrolWpGen;
+				
+			} forEach _guardPositions;
+
+		};
+		
+		//Group
+		if (!isNil "_guardPositions") then 
+		{
+			{
+				_opforGroup = createGroup EAST;
+				"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
+				[_opforGroup, [_x]] spawn gnrf_fnc_partrolWpGen;
+				
+			} forEach _guardPositions;
+
+		};
+
 
 publicVariable "opforTrashbin";
 

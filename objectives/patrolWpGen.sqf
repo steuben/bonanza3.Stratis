@@ -61,7 +61,7 @@ if (!_guard) then
 } else
 {
 	_wp = _group addWaypoint [_wpPos, 0];
-	_wp setWaypointType "Hold";
+	_wp setWaypointType "HOLD";
 	_wp setWaypointBehaviour "SAFE";
 	_wp setWaypointSpeed "LIMITED";
 	_wp setWaypointFormation "FILE";
