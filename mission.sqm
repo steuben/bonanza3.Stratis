@@ -31,27 +31,22 @@ class Mission
 		briefingName="Bonanza3";
 		briefingDescription="Bonanza-2-Bravo Dealing Death To The Persians";
 		resistanceWest=0;
-		timeOfChanges=6360;
-		startWeather=0.84999996;
-		startFog=0.25;
+		startWeather=0.70999998;
+		startFog=0.26999998;
 		startWind=0.20999999;
 		startWindDir=50;
-		startRain=0.14;
-		startLightnings=0.16;
 		startWaves=0.099999994;
 		startGust=0.16;
-		forecastWeather=0.84999996;
+		forecastWeather=0.099999994;
 		forecastWind=0.079999998;
 		forecastWaves=0.099999994;
 		forecastGust=0.029999999;
-		rainForced=1;
-		lightningsForced=1;
 		windForced=1;
 		year=2020;
 		month=7;
 		day=6;
 		hour=4;
-		minute=15;
+		minute=10;
 	};
 	class Groups
 	{
