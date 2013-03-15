@@ -1763,13 +1763,16 @@ class Mission
 	};
 	class Sensors
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			position[]={3342.0535,7.6070147,5799.7114};
+			a=10;
+			b=10;
 			activationBy="ALPHA";
 			interruptable=1;
 			age="UNKNOWN";
+			text="opfor";
 			expActiv="startAttack=true;";
 			class Effects
 			{
@@ -1796,6 +1799,23 @@ class Mission
 				sound="Hints";
 				titleType="TEXT";
 				title="REJOICE! The sandpeople are dead!";
+			};
+		};
+		class Item2
+		{
+			position[]={3361.8945,10.443411,5799.7119};
+			a=10;
+			b=10;
+			activationBy="BRAVO";
+			interruptable=1;
+			age="UNKNOWN";
+			text="assman";
+			expActiv="_ok = createDialog ""uiAssmanStart""; assmanStart = true;";
+			class Effects
+			{
+				sound="Hints";
+				titleType="TEXT";
+				title="Tharr be camelfuckers";
 			};
 		};
 	};
