@@ -1778,7 +1778,7 @@ class Mission
 			{
 				sound="Hints";
 				titleType="TEXT";
-				title="Tharr be camelfuckers";
+				title="Enemy Assault On Agia Marina";
 			};
 		};
 		class Item1
@@ -1807,6 +1807,7 @@ class Mission
 			a=10;
 			b=10;
 			activationBy="BRAVO";
+			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
 			text="assman";
@@ -1814,8 +1815,6 @@ class Mission
 			class Effects
 			{
 				sound="Hints";
-				titleType="TEXT";
-				title="Tharr be camelfuckers";
 			};
 		};
 	};
