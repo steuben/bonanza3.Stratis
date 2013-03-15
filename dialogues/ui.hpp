@@ -4,7 +4,7 @@ class uiAssmanStart
   idd = -1;
   movingEnable = true;
   controlsBackground[] = {"bgShape","titleHome"};
-  controls[] = {"subtitleH1_support_artillery","subtitleH1_support_air","subtitleH1_support_satscan", "btn_close"};
+  controls[] = {"btn_reqFiremission","btn_reqFixedwing","btn_reqRotarywing","btn_reqCCP","btn_reqINFIL","btn_reqEXFIL","btn_close"};
   objects[] = {};
   
   #include "assmanStart.hpp"

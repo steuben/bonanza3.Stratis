@@ -40,7 +40,51 @@ class ButtonControlContent
 	text = "";
 	
   };
-  
+
+
+// ASSMAN 2.0 BUTTON
+
+class ButtonControlContentWide 
+  {
+    idc = -1;
+    type = 1;
+    style = 2;
+    moving = false;
+	
+	
+    x = 0.4;
+    y = 0.4;
+    w = 0.515;
+	h = 0.07;
+    
+	
+    font = "EtelkaMonospaceProBold";
+    sizeEx = 0.032;
+    
+    action = ""
+    
+    default = false;
+    colorText[] = {1,1,1,1};
+    colorFocused[] = {0.7, 0.7, 0.4,1};
+    colorShadow[] = {0.8,0.8,0.8,0};
+    colorBorder[] = {0.5,0.5,0.5,1}; 
+    colorBackground[] = {0.6, 0.6, 0.3,1};
+    colorBackgroundActive[] = {0.2,0.2,0.1,1};
+    colorDisabled[] = {0.6,0.6,0.6,1};
+    colorBackgroundDisabled[] = {0.3,0.3,0.3,1};
+    borderSize = 0.000;
+    offsetX = 0.005;
+    offsetY = 0.005;
+    offsetPressedX = 0.002;
+    offsetPressedY = 0.002;
+    soundEnter[] = {"",0,1}; // NoSound
+    soundPush[] = {"",0,1}; // NoSound
+    soundClick[] = {"",0,1}; // NoSound
+    soundEscape[] = {"",0,1}; // NoSound
+	
+	text = "";
+	
+  };  
   
  
  // BACK TO MAIN MENU - BUTTON 
