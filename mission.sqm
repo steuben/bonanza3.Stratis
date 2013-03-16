@@ -11,7 +11,8 @@ class Mission
 		"A3_Structures_F_Civ_Camping",
 		"A3_Air_F_MH9",
 		"A3_Soft_F_Quadbike",
-		"A3_Modules_F_Supports"
+		"A3_Modules_F_Supports",
+		"A3_Static_F_Mk6"
 	};
 	addOnsAuto[]=
 	{
@@ -23,6 +24,7 @@ class Mission
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Structures_F_Civ_Camping",
 		"A3_Soft_F_Quadbike",
+		"A3_Static_F_Mk6",
 		"a3_map_stratis"
 	};
 	randomSeed=8350429;
@@ -50,7 +52,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			side="WEST";
@@ -1606,15 +1608,58 @@ class Mission
 				};
 			};
 		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3263.6558,5.4123755,5778.8687};
+					azimut=-4.1640167;
+					id=52;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					leader=1;
+					rank="COLONEL";
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3263.679,5.4249887,5781.9956};
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3263.6558,5.4123755,5778.8687};
+					id=52;
+					name="commanderReich";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=14;
+		items=16;
 		class Item0
 		{
 			position[]={3253.7002,5.1592236,5800.3711};
 			azimut=30.702702;
-			id=52;
+			id=53;
 			side="EMPTY";
 			vehicle="B_Hunter_F";
 			skill=1;
@@ -1624,7 +1669,7 @@ class Mission
 		{
 			position[]={3257.9478,5.2689271,5796.9434};
 			azimut=210.46101;
-			id=53;
+			id=54;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=1;
@@ -1634,7 +1679,7 @@ class Mission
 		{
 			position[]={3019.5435,2.9495947,5914.8535};
 			azimut=14.329358;
-			id=54;
+			id=55;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=1;
@@ -1643,7 +1688,7 @@ class Mission
 		{
 			position[]={3025.1326,2.62078,5923.748};
 			azimut=143.0829;
-			id=55;
+			id=56;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=1;
@@ -1652,7 +1697,7 @@ class Mission
 		{
 			position[]={3103.3252,3.3499999,5961.9487};
 			azimut=143.0829;
-			id=56;
+			id=57;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=1;
@@ -1661,7 +1706,7 @@ class Mission
 		{
 			position[]={3101.4631,3.3499999,5952.9346};
 			azimut=211.17336;
-			id=57;
+			id=58;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=1;
@@ -1670,7 +1715,7 @@ class Mission
 		{
 			position[]={3118.3005,3.3499999,5935.1211};
 			azimut=211.17336;
-			id=58;
+			id=59;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=1;
@@ -1679,7 +1724,7 @@ class Mission
 		{
 			position[]={3125.8025,3.8524983,5854.5254};
 			azimut=210.461;
-			id=59;
+			id=60;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=1;
@@ -1689,7 +1734,7 @@ class Mission
 		{
 			position[]={3252.1465,5.292726,5795.4507};
 			azimut=7.3489847;
-			id=60;
+			id=61;
 			side="EMPTY";
 			vehicle="Box_NATO_Support_F";
 			skill=1;
@@ -1698,7 +1743,7 @@ class Mission
 		{
 			position[]={3250.7375,5.3291473,5793.2554};
 			azimut=105.68128;
-			id=61;
+			id=62;
 			side="EMPTY";
 			vehicle="Box_NATO_Wps_F";
 			skill=1;
@@ -1707,7 +1752,7 @@ class Mission
 		{
 			position[]={3255.2734,5.429852,5784.0591};
 			azimut=30.7027;
-			id=62;
+			id=63;
 			side="EMPTY";
 			vehicle="B_Quadbike_F";
 			skill=1;
@@ -1717,7 +1762,7 @@ class Mission
 		{
 			position[]={3257.8179,5.4299998,5782.4517};
 			azimut=30.7027;
-			id=63;
+			id=64;
 			side="EMPTY";
 			vehicle="B_Quadbike_F";
 			skill=1;
@@ -1727,7 +1772,7 @@ class Mission
 		{
 			position[]={3250.8044,5.4204698,5785.4209};
 			azimut=32.970623;
-			id=64;
+			id=65;
 			side="EMPTY";
 			vehicle="Box_NATO_Wps_F";
 			skill=1;
@@ -1736,10 +1781,32 @@ class Mission
 		{
 			position[]={3245.9192,5.3912897,5787.0806};
 			azimut=7.3489847;
-			id=65;
+			id=66;
 			side="EMPTY";
 			vehicle="Box_NATO_Support_F";
 			skill=1;
+		};
+		class Item14
+		{
+			position[]={3295.2825,5.0671997,5765.6592};
+			azimut=106.103;
+			id=67;
+			side="EMPTY";
+			vehicle="B_Mk6";
+			leader=1;
+			skill=0.60000002;
+			text="artilleryAsset2";
+		};
+		class Item15
+		{
+			position[]={3296.2205,5.0189772,5768.8501};
+			azimut=78.666603;
+			id=68;
+			side="EMPTY";
+			vehicle="B_Mk6";
+			leader=1;
+			skill=0.60000002;
+			text="artilleryAsset1";
 		};
 	};
 	class Markers

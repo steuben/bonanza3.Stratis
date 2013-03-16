@@ -28,14 +28,14 @@
 		 class btn_reqFiremission:ButtonControlContentWide
 		  {
 			
-			idc = -1;
+			idc = 100;
 			type = 1;
 			
 			x = 0.4;
-			y = 0.28;
+			y = 0.29;
 			
 			text = "INDIRECT";
-			action = "if (supportArtyBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportArty) then {[0, player] execVM ""extras\supportSquad\arty.sqf""; assmanStart = false; closeDialog 0};   if (supportArty) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissArty""; };"	
+			action = "if (supportArtyBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportArty) then {[0, player] execVM ""extras\assman\assets\arty\init.sqf""; assmanStart = false; closeDialog 0};   if (supportArty) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissArty""; };"	
 		  };
   
 
@@ -44,11 +44,11 @@
 		 class btn_reqFixedwing:ButtonControlContentWide
 		  {
 			
-			idc = -1;
+			idc = 101;
 			type = 1;
 			
 			x = 0.4;
-			y = 0.36
+			y = 0.37
 			
 			text = "FIXED WING";
 			action = "if (supportFixedwingBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportFixedwing) then {[0, player] execVM ""extras\supportSquad\fixedWing.sqf""; assmanStart = false; closeDialog 0};   if (supportFixedwing) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissFixedwing""; };"	
@@ -60,11 +60,11 @@
 		 class btn_reqRotarywing:ButtonControlContentWide
 		  {
 			
-			idc = -1;
+			idc = 102;
 			type = 1;
 			
 			x = 0.4;
-			y = 0.44
+			y = 0.45
 			
 			text = "ROTARY WING";
 			action = "if (supportRotarywingBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportRotarywing) then {[0, player] execVM ""extras\supportSquad\Rotarywing.sqf""; assmanStart = false; closeDialog 0};   if (supportRotarywing) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissRotarywing""; };"	
@@ -76,11 +76,11 @@
 		 class btn_reqCCP:ButtonControlContentWide
 		  {
 			
-			idc = -1;
+			idc = 103;
 			type = 1;
 			
 			x = 0.4;
-			y = 0.52
+			y = 0.53
 			
 			text = "CCP";
 			action = "if (supportCCP) exitWith {hint ""ASSET BUSEY""}; if (!supportCCP) then {[0, player] execVM ""extras\supportSquad\CCP.sqf""; assmanStart = false; closeDialog 0};   if (supportCCP) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissCCP""; };"	
@@ -93,11 +93,11 @@
 		 class btn_reqINFIL:ButtonControlContentWide
 		  {
 			
-			idc = -1;
+			idc = 104;
 			type = 1;
 			
 			x = 0.4;
-			y = 0.60
+			y = 0.61
 			
 			text = "INFIL";
 			action = "if (supportInfil) exitWith {hint ""ASSET BUSEY""}; if (!supportInfil) then {[0, player] execVM ""extras\supportSquad\Infil.sqf""; assmanStart = false; closeDialog 0};   if (supportInfil) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissInfil""; };"	
@@ -110,11 +110,11 @@
 		 class btn_reqEXFIL:ButtonControlContentWide
 		  {
 			
-			idc = -1;
+			idc = 105;
 			type = 1;
 			
 			x = 0.4;
-			y = 0.68
+			y = 0.69
 			
 			text = "EXFIL";
 			action = "if (supportExfil) exitWith {hint ""ASSET BUSEY""}; if (!supportExfil) then {[0, player] execVM ""extras\supportSquad\Exfil.sqf""; assmanStart = false; closeDialog 0};   if (supportExfil) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissExfil""; };"	

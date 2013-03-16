@@ -37,7 +37,7 @@ switch (_dikCode) do
 			breakTo "main";
 		};	
 	
-		if (!_shift && !_ctrlKey && !_alt && !assmanStart) then  {_ok = createDialog "uiAssmanStart"; assmanStart = true; _handled = true; breakTo "main"};
+		if (!_shift && !_ctrlKey && !_alt && !assmanStart) then  {[] execVM "extras\assman\assmanStateHandler.sqf";_ok = createDialog "uiAssmanStart"; assmanStart = true; _handled = true; breakTo "main";};
 		if (!_shift && !_ctrlKey && !_alt && assmanStart) then  {closeDialog 0; assmanStart = false; _handled = true; breakTo "main"};
 	};
 };

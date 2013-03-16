@@ -1,3 +1,5 @@
+alpha = group steuben;
+steuben setGroupID ["BONANZA-2-ALPHA","GroupColor4"];
 
 //steuben loadout
 _unit = steuben;
