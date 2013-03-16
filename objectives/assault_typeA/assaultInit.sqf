@@ -47,7 +47,6 @@ _spawn = _spawnPositions call bis_fnc_selectRandom;
 		
 
 /////////////////////////////////////////////////////////////////
-
 					
 // Create OPFOR Guard Groups
 
@@ -61,8 +60,7 @@ _spawn = _spawnPositions call bis_fnc_selectRandom;
 				
 			} forEach _guardPositions;
 
-		};
-		
+		};	
 
 
 publicVariable "opforTrashbin";
