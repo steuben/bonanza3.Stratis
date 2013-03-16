@@ -4,7 +4,7 @@
  
 // HEADLINE 
  
-class titleDismissMortars : titleBarText
+class titleDismissArty : titleBarText
   {
 	text = " INDIRECT";
   };
@@ -12,7 +12,7 @@ class titleDismissMortars : titleBarText
 
 // BUTTONS
  
- class btn_dismissMortars:ButtonControlContentWide 
+ class btn_dismissArty:ButtonControlContentWide 
   {
     
 	idc = -1;

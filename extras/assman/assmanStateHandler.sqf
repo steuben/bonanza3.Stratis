@@ -9,7 +9,7 @@ sleep 0.1;
 		ctrlEnable [101, false];
 
 		// ROTARY WING
-		ctrlEnable [102, false];
+		ctrlEnable [102, true];
 
 		// CCP
 		ctrlEnable [103, false];

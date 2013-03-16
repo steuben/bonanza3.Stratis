@@ -51,7 +51,7 @@
 			y = 0.37
 			
 			text = "FIXED WING";
-			action = "if (supportFixedwingBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportFixedwing) then {[0, player] execVM ""extras\supportSquad\fixedWing.sqf""; assmanStart = false; closeDialog 0};   if (supportFixedwing) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissFixedwing""; };"	
+			action = "if (supportFixedwingBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportFixedwing) then {[0, player] execVM ""extras\assman\assets\fixedWing\init.sqf""; assmanStart = false; closeDialog 0};   if (supportFixedwing) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissFixedwing""; };"	
 		  };
   
 
@@ -67,7 +67,7 @@
 			y = 0.45
 			
 			text = "ROTARY WING";
-			action = "if (supportRotarywingBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportRotarywing) then {[0, player] execVM ""extras\supportSquad\Rotarywing.sqf""; assmanStart = false; closeDialog 0};   if (supportRotarywing) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissRotarywing""; };"	
+			action = "if (supportRotarywingBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportRotarywing) then {[0, player] execVM ""extras\assman\assets\rotaryWing\init.sqf""; assmanStart = false; closeDialog 0};   if (supportRotarywing) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissRotarywing""; };"	
 		  };
   
 

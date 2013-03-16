@@ -17,8 +17,21 @@ class uiAssmanDismissArty
   idd = -1;
   movingEnable = true;
   controlsBackground[] = {"bgShapeDismiss","titleBarText"};
-  controls[] = {"titleDismissMortars","btn_backToStart","btn_dismissMortars","btn_close"};
+  controls[] = {"titleDismissArty","btn_backToStart","btn_dismissArty","btn_close"};
   objects[] = {};
   
   #include "assmanDismissArty.hpp"
 };
+
+class uiAssmanDismissRotarywing 
+{
+
+  idd = -1;
+  movingEnable = true;
+  controlsBackground[] = {"bgShapeDismiss","titleBarText"};
+  controls[] = {"titleDismissRotarywing","btn_backToStart","btn_dismissRotarywing","btn_close"};
+  objects[] = {};
+  
+  #include "assmanDismissRotarywing.hpp"
+};
+
