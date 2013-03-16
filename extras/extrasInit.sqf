@@ -4,10 +4,12 @@ if (!isDedicated) then
 
 	////// client functions precompiled
 	gnrf_playerRespawn_fnc = compile preProcessFileLineNumbers "client\functions\respawn.sqf";
+	grnf_keyHandling_fnc = compile preProcessFileLineNumbers "client\functions\keyHandling.sqf";
 	
 	////// Scripts
 	[] execVM "client\eventHandlers.sqf";
 	[] execVM "extras\mapTool.sqf";
+	[] execVM "extras\assman\assmanInit.sqf";
 	
 };
 

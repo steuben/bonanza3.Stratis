@@ -4,6 +4,8 @@ if ((paramsArray select 0) == 1) then
 	debugModeOn = true;
 };
 
+if ((paramsArray select 0) == 0) exitWith {};
+
 if (isNil "gnrf_debug_posArray") then 
 {
 	gnrf_debug_posArray = [];
