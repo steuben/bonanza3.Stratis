@@ -21,4 +21,4 @@ if (player == gnarfo) then
 [] execVM "loadout\loadoutBoxes.sqf";
 [] execVM "loadout\loadoutVehicles.sqf";
 
-[] execVM "extras\debug.sqf";
+

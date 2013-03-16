@@ -1,23 +1,6 @@
-//debugModeOn
-if ((paramsArray select 0) == 1) then
-{
-	debugModeOn = true;
-};
-
-if ((paramsArray select 0) == 0) exitWith {};
-
-if (isNil "gnrf_debug_posArray") then 
-{
-	gnrf_debug_posArray = [];
-};
-
-//set Friendly
-WEST setFriend [EAST,1];
-EAST setFriend [WEST,1];
 
 
-////Action Menu
-
+////add Action Menu
 //show debugOptions
 _debugMenu_act = player addAction [("<t color=""#4693FF"">" + ("Debug Options") + "</t>"),"gen_action.sqf",[{	
 	
