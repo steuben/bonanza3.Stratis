@@ -66,4 +66,12 @@ _spawnPos = [_x, _y, _z];
 if (_offSet != 0) then {_spawnPos = _spawnPos findEmptyPosition [1,20, "Man"]};
 player setpos _spawnPos;
 
-[] execVM "extras\debug.sqf";
+if (debugModeOn) then 
+{
+	[] call grnf_debugActions_fnc;
+	gnrf_noDebugActions = nil;
+
+} else 
+{
+	gnrf_noDebugActions = true;
+};

@@ -13,25 +13,39 @@ scopeName "main";
 switch (_dikCode) do 
 {	
 		
-	case 70 : {
+	case 70 : 
+	{
 	
-		if (_shift && _ctrlKey && !_alt && !debugModeOn && (paramsArray select 0) != 1) then  
+		if (_shift && _ctrlKey && !_alt && !debugModeOn) then  
 		{
-			titleText ["Debug mode enabled", "PLAIN"];
-			debugModeOn = true; 
-			if (isNil "gnrf_debugCalledOnce") then 
+						
+			if (isNil "grnf_debugActions_fnc") then
 			{
-				paramsArray set [0,1]; 
-				gnrf_debugCalledOnce = true;
+				[] execVM "extras\debug\debugInit.sqf";
+			
+			} else 
+			{
+				if (isNil "gnrf_noDebugActions") then 
+				{
+					debugModeOn = true; 
+
+				} else 
+				{
+					[] call grnf_debugActions_fnc;
+					debugModeOn = true;
+					gnrf_noDebugActions = nil;
+				};
 			};
+			
+			titleText ["Debug mode enabled", "PLAIN"];
+			
 			_handled = true;
 			breakTo "main";
 		};
 		
-		if (_shift && _ctrlKey && !_alt && debugModeOn && (paramsArray select 0) != 1) then  
+		if (_shift && _ctrlKey && !_alt && debugModeOn) then  
 		{
 			titleText ["Debug mode disabled", "PLAIN"];
-			paramsArray set [0,0]; 
 			debugModeOn = false;
 			_handled = true; 
 			breakTo "main";

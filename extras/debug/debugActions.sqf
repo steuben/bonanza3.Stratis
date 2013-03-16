@@ -1,15 +1,5 @@
 
 
-
-////debug menu function
-gnrf_debugActions =
-{
-
-if (isNil "gnrf_debug_posArray") then 
-{
-	gnrf_debug_posArray = [];
-};
-
 ////add Action Menu
 //show debugOptions
 _debugMenu_act = player addAction [("<t color=""#4693FF"">" + ("Debug Options") + "</t>"),"gen_action.sqf",[{	
@@ -96,7 +86,3 @@ _mapTool_act = player addAction [("<t color=""#1F67CC"">" + ("Map Tool") + "</t>
 	[] spawn gnrf_mapTool_fnc
 	
 }],0,false, false,"","gnrf_debugMenu AND debugModeOn AND (isNil 'gnrf_rulerMode')"];
-
-};
-
-[] call gnrf_debugActions;

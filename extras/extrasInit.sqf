@@ -6,11 +6,19 @@ if (!isDedicated) then
 	gnrf_playerRespawn_fnc = compile preProcessFileLineNumbers "client\functions\respawn.sqf";
 	grnf_keyHandling_fnc = compile preProcessFileLineNumbers "client\functions\keyHandling.sqf";
 	
+	
 	////// Scripts
 	[] execVM "client\eventHandlers.sqf";
 	[] execVM "extras\mapTool.sqf";
 	[] execVM "extras\assman\assmanInit.sqf";
 	
+	if ((paramsArray select 0) == 1) then 
+	{
+		[] execVM "extras\debug\debugInit.sqf";	
+	
+	} else {debugModeOn = false};
+	
+	If ((paramsArray select 1) == 1) then {[] execVM "extras\debug\setFriends.sqf"};
 };
 
 //////host//////

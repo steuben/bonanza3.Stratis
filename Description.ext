@@ -27,5 +27,14 @@ class Params
                 texts[] = {"Disabled", "Enabled"};
                 default = 1;
         };
+
+        class setFriends
+        {
+        //paramsArray[1]
+                title = "Set Friends";
+                values[] = {0, 1};
+                texts[] = {"Disabled", "Enabled"};
+                default = 1;
+        };
 		
 };

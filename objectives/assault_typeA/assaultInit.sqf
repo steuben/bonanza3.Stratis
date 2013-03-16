@@ -65,4 +65,4 @@ _spawn = _spawnPositions call bis_fnc_selectRandom;
 
 publicVariable "opforTrashbin";
 
-titleText [format ["Mission: Assault %1", _name], "PLAIN"];
+//titleText [format ["Mission: Assault %1", _name], "PLAIN"];
