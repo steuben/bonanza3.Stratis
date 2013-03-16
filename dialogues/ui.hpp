@@ -9,3 +9,16 @@ class uiAssmanStart
   
   #include "assmanStart.hpp"
 };
+
+
+class uiAssmanDismissArty 
+{
+
+  idd = -1;
+  movingEnable = true;
+  controlsBackground[] = {"bgShapeDismiss","titleBarText"};
+  controls[] = {"titleDismissMortars","btn_backToStart","btn_dismissMortars","btn_close"};
+  objects[] = {};
+  
+  #include "assmanDismissArty.hpp"
+};

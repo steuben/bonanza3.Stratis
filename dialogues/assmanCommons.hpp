@@ -75,7 +75,7 @@ class ButtonControlContentWide
     borderSize = 0.000;
     offsetX = 0.005;
     offsetY = 0.005;
-    offsetPressedX = 0.002;
+    offsetPressedX = 0.000;
     offsetPressedY = 0.002;
     soundEnter[] = {"",0,1}; // NoSound
     soundPush[] = {"",0,1}; // NoSound
@@ -89,23 +89,23 @@ class ButtonControlContentWide
  
  // BACK TO MAIN MENU - BUTTON 
   
-  class btn_backToStart:ButtonControlContent 
+  class btn_backToStart:ButtonControlContentWide 
   {
     
 	idc = -1;
     type = 1;
 	
-    x = 0.46;
-    y = 0.36;
+    x = 0.4;
+	y = 0.29;
 	
-	h = 0.1;
-    w = 0.395;
+	w = 0.515;
+	h = 0.07;
 	
 	font = "EtelkaMonospaceProBold";
     sizeEx = 0.054;
 	
 	text = "MAIN MENU";
-	action = "closeDialog 0; _ok = createDialog ""uiAssmanStart"";"	
+	action = "closeDialog 0;  [] execVM ""extras\assman\assmanStateHandler.sqf""; _ok = createDialog ""uiAssmanStart"";"	
   };
   
  
@@ -171,7 +171,7 @@ class ButtonControlContentWide
 	font = "EtelkaMonospaceProBold";
 	sizeEx = 0.023;
 	x = 0.4; y = 0.2;
-	w = 0.515;  h = 0.55;
+	w = 0.515;  h = 0.57;
 	text = "";
   };
   
@@ -187,6 +187,21 @@ class ButtonControlContentWide
 	sizeEx = 0.023;
 	x = 0.4; y = 0.2;
 	w = 0.515;  h = 0.57;
+	text = "";
+  };
+  
+  class bgShapeDismiss
+  {
+	idc = -1;
+	type =  0 ;  
+	style = 0; 
+	moving = true;
+	colorText[] = { 0, 0, 0, 1 };
+	colorBackground[] = { 0.4, 0.4, 0.3, 0.6 };
+	font = "EtelkaMonospaceProBold";
+	sizeEx = 0.023;
+	x = 0.4; y = 0.2;
+	w = 0.515;  h = 0.25;
 	text = "";
   };
   
