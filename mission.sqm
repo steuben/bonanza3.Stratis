@@ -27,7 +27,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Bonanza3";
-		briefingDescription="Bonanza-2-Bravo Dealing Death To The Persians";
+		briefingDescription="Special Forces ODA ""Bonanza-3"" is very busy indeed.";
 		resistanceWest=0;
 		startWeather=0.70999998;
 		startFog=0.26999998;
@@ -1649,9 +1649,9 @@ class Mission
 		items=2;
 		class Item0
 		{
-			position[]={3250.5142,5.0801063,5802.75};
+			position[]={3246.6428,5.0432568,5802.8076};
 			name="bluforStart";
-			text="BONANZA-2-BRAVO";
+			text="BONANZA-3";
 			type="b_inf";
 		};
 		class Item1

@@ -1,5 +1,5 @@
 bravo = group gnarfo;
-gnarfo setGroupID ["BONANZA-2-BRAVO","GroupColor4"];
+gnarfo setGroupID ["BONANZA-3-BRAVO","GroupColor4"];
 
 //gnarfo loadout
 _unit = gnarfo;
