@@ -1,13 +1,16 @@
 
-private ["_patrolPositions", "_spawnPositions", "_spawn", "_terrain", "_guardPositions", "_name", "_wp"];
+private ["_patrolPositions", "_spawnPositions", "_spawn", "_terrain", "_guardPositions", "_name", "_wp","_taskmarker"];
 
 _patrolPositions = _this select 0;
 _spawnPositions = _this select 1;
 _terrain = _this select 2;
 _name = _this select 3;
 _guardPositions = _this select 4;
-
+_taskmarker = _this select 5;
 _spawn = _spawnPositions call bis_fnc_selectRandom;
+
+[_name, _terrain, _taskmarker] execVM "objectives\assault_typeA\taskhandling.sqf";
+
 
 // Create OPFOR Patrol Groups
 		

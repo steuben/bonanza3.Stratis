@@ -5,6 +5,8 @@ gnrf_campRogainSpawn = [[5012.97,5905.77,0],[5027.36,5934.04,0],[4889.4,5898.49,
 gnrf_campRogainTerrain = "outpost";
 gnrf_campRogainName = "Camp Rogain";
 gnrf_campRogainGuard = [[5025.22,5918.99,208.809],[4885.85,5888.56,0],[4963.49,5882.25,0],[5027.55,5866.24,0],[4977.81,5897.05,0],[5014.69,5954.8,0],[5030.7,5937.33,0],[5049.63,5877.89,0],[4892.65,5902.63,0],[4946.75,5856.29,0],[4944.57,5849.98,0]]; //optional
+gnrf_campRogainTaskmarker = [5012.97,5905.77,0];
+
 sleep 5;
 [] execVM "objectives\objectivesInit.sqf";
 

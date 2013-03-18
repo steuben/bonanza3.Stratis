@@ -1,6 +1,6 @@
 
 
-private ["_location", "_patrolPositions", "_spawnPositions", "_terrain", "_name", "_objective", "_objectiveType", "_guardPositions"];
+private ["_location", "_patrolPositions", "_spawnPositions", "_terrain", "_name", "_objective", "_objectiveType", "_guardPositions","_taskmarker"];
 
 if (isNil "opforTrashbin") then
 {
@@ -20,6 +20,7 @@ switch (_location) do
 		_terrain = gnrf_campRogainTerrain;
 		_name = gnrf_campRogainName;
 		_guardPositions = gnrf_campRogainGuard;
+		_taskmarker = gnrf_campRogainTaskmarker;
 	};
 };
 
@@ -39,4 +40,4 @@ switch (_objectiveType) do
 //player sideChat format ["PATROL: %1 ### SPAWN: %2 ### TERRAIN: %3 ### NAME: %4 ### OBJECTIVE: %5 ###GUARD: %6", _patrolPositions, _spawnPositions, _terrain, _name, _objectiveType, _guardPositions];
 
 //spawn new mission
-[_patrolPositions, _spawnPositions, _terrain, _name, _guardPositions] spawn _objective;
+[_patrolPositions, _spawnPositions, _terrain, _name, _guardPositions, _taskmarker] spawn _objective;
