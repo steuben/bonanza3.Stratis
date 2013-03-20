@@ -7,27 +7,13 @@ if (isNil "opforTrashbin") then
 	opforTrashbin = [];
 };
 
-//LOCATIONS
+//select random location
+_location = [gnrf_campRogain] call bis_fnc_selectRandom; //add more locations to this array; define locations in locations.sqf
 
-_location = ["Camp Rogain"] call bis_fnc_selectRandom; //add more locations to this array; define locations in locations.sqf
-
-switch (_location) do
-{
-	CASE "Camp Rogain": //add new case for each location
-	{
-		_patrolPositions = gnrf_campRogainPatrol call bis_fnc_selectRandom;
-		_spawnPositions = gnrf_campRogainSpawn;
-		_terrain = gnrf_campRogainTerrain;
-		_name = gnrf_campRogainName;
-		_guardPositions = gnrf_campRogainGuard;
-		_taskmarker = gnrf_campRogainTaskmarker;
-	};
-};
-
-//OBJECTIVES
-
+//select random objective type
 _objectiveType = ["assault"] call bis_fnc_selectRandom; //add more objective types to this array
 
+//select random objective of given type
 switch (_objectiveType) do
 {
 	CASE "assault": //add new case for each objective type
@@ -36,8 +22,5 @@ switch (_objectiveType) do
 	};
 };	
 
-//debug variables
-//player sideChat format ["PATROL: %1 ### SPAWN: %2 ### TERRAIN: %3 ### NAME: %4 ### OBJECTIVE: %5 ###GUARD: %6", _patrolPositions, _spawnPositions, _terrain, _name, _objectiveType, _guardPositions];
-
 //spawn new mission
-[_patrolPositions, _spawnPositions, _terrain, _name, _guardPositions, _taskmarker] spawn _objective;
+[_location] spawn _objective;
