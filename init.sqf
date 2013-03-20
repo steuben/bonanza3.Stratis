@@ -21,4 +21,5 @@ if (player == gnarfo) then
 [] execVM "loadout\loadoutBoxes.sqf";
 [] execVM "loadout\loadoutVehicles.sqf";
 
-
+//global variables
+gnrf_opforSkill = 0.5;
