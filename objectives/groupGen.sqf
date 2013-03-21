@@ -1,7 +1,9 @@
 
-_pos = _this select 0;
+private ["_pos", "_size", "_isVehicle", "_unitClassNames", "_ranks", "_skill", "_group", "_className", "_vehicle", "_crew", "_cargo", "_units"];
+
+_pos = _this;
 _size = round (random 3)+3;
-_isVehicle = [true, false] call bis_fnc_selectRandom;
+_isVehicle = 40 call grnf_fnc_coinFlip;
 _unitClassNames = ["O_Soldier_lite_F", "O_Soldier_AR_F", "O_Soldier_LAT_F"];
 _vehicleClassNames = ["O_Galkin_MG_F", "O_Galkin_GMG_F"];
 _ranks = ["Corporal", "Private"];
@@ -31,10 +33,11 @@ if (!_isVehicle) then
 		
 	_vehicle = _className createVehicle _pos;
 	
-	_crew = getArray (configFile >> "cfgVehicles" >> _className >> "crew";
-	_cargo = getArray (configFile >> "cfgVehicles" >> _className >> "typicalcargo";
+	_crew = getText (configFile >> "cfgVehicles" >> _className >> "crew");
+	_cargo = getArray (configFile >> "cfgVehicles" >> _className >> "typicalcargo");
 	_units = [_crew] + _cargo;
-	for "_i" form 0 to (count _units)-1 do
+
+	for "_i" from 0 to (count _units)-1 do
 	{
 		_className = _units select _i;
 		_rank = _ranks call bis_fnc_selectRandom;
@@ -50,7 +53,7 @@ if (!_isVehicle) then
 			case 1 :
 			{
 				_unit moveInGunner _vehicle;
-			}
+			};
 			case 2 :
 			{
 				_unit moveInCommander _vehicle;

@@ -5,7 +5,7 @@ if (!isDedicated) then
 	////// client functions precompiled
 	gnrf_playerRespawn_fnc = compile preProcessFileLineNumbers "client\functions\respawn.sqf";
 	grnf_keyHandling_fnc = compile preProcessFileLineNumbers "client\functions\keyHandling.sqf";
-	
+	grnf_fnc_coinFlip = compile preProcessFileLineNumbers "extras\coinFlip.sqf";
 	
 	////// Scripts
 	[] execVM "client\eventHandlers.sqf";
@@ -26,9 +26,8 @@ if (isServer) then
 {
 	gnrf_fnc_partrolWpGen = compile preProcessFileLineNumbers "objectives\patrolWpGen.sqf";
 	gnrf_fnc_assaultA = compile preProcessFileLineNumbers "objectives\assault_typeA\assaultInit.sqf";
+	gnrf_fnc_groupGen = compile preProcessFileLineNumbers "objectives\groupGen.sqf";
 	[] execVM "objectives\locations.sqf";
-	
-	
 };
 	
 //define respawn position(s)	
@@ -42,4 +41,5 @@ gnrf_respawnInfo = [[hunter, 10], [atv1, 10],[atv2, 10]];
 
 higherCommand = group commanderReich;
 commanderReich setGroupID ["LONGSWORD","GroupColor4"];
+
 

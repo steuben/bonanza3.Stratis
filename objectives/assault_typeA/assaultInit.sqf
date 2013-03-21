@@ -14,47 +14,21 @@ _taskmarker = getPos _area;
 
 
 // Create OPFOR Patrol Groups
-		
-		// Group
-		_opforGroup = createGroup EAST;
-		_spawn = _spawnPositions call bis_fnc_selectRandom;
+_spawn = _spawnPositions call bis_fnc_selectRandom;
+_opforGroup = _spawn call gnrf_fnc_groupGen;
+_patrolPositions = _patrol call bis_fnc_selectRandom;
+[_opforGroup, _patrolPositions] spawn gnrf_fnc_partrolWpGen;
 
-		"O_Soldier_TL_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.5, "Major"];
-		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
-		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
-		"O_Soldier_AR_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
-		
-		_patrolPositions = _patrol call bis_fnc_selectRandom;
-		[_opforGroup, _patrolPositions] spawn gnrf_fnc_partrolWpGen;
-		
-		
-		// Group
-		_opforGroup = createGroup EAST;
-		_spawn = _spawnPositions call bis_fnc_selectRandom;
+_spawn = _spawnPositions call bis_fnc_selectRandom;
+_opforGroup = _spawn call gnrf_fnc_groupGen;
+_patrolPositions = _patrol call bis_fnc_selectRandom;
+[_opforGroup, _patrolPositions] spawn gnrf_fnc_partrolWpGen;
 
-		"O_Soldier_TL_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.5, "Major"];
-		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
-		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
-		"O_Soldier_AR_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
-		"O_soldier_M_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
-		"O_Soldier_LAT_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
+_spawn = _spawnPositions call bis_fnc_selectRandom;
+_opforGroup = _spawn call gnrf_fnc_groupGen;
+_patrolPositions = _patrol call bis_fnc_selectRandom;
+[_opforGroup, _patrolPositions] spawn gnrf_fnc_partrolWpGen;
 
-		_patrolPositions = _patrol call bis_fnc_selectRandom;
-		[_opforGroup, _patrolPositions] spawn gnrf_fnc_partrolWpGen;
-		
-		
-		// Group
-		_opforGroup = createGroup EAST;
-		_spawn = _spawnPositions call bis_fnc_selectRandom;
-
-		"O_Soldier_TL_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.5, "Major"];
-		"O_Soldier_lite_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
-		"O_Soldier_LAT_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
-		"O_Soldier_AR_F" createUnit [_spawn, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Private"];
-
-		_patrolPositions = _patrol call bis_fnc_selectRandom;
-		[_opforGroup, _patrolPositions] spawn gnrf_fnc_partrolWpGen;
-		
 
 /////////////////////////////////////////////////////////////////
 					
