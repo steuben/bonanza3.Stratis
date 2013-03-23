@@ -73,8 +73,8 @@ if (!supportRotarywing) then
 			{
 					_dude sideChat "LONGSWORD, this is BONANZA. Be advised, Manatee is down. I say again, Manatee is down! ";
 					
-					sleep 3;
-					commanderReich sideChat "BONANZA, this is LONGSWORD actual. Any chance the pilots made it out alive? Over.";
+					sleep 7;
+					commanderReich sideChat "BONANZA, this is LONGSWORD. Any chance the pilots made it out alive? Over.";
 					sleep 7;
 					
 					deleteVehicle manatee1;
@@ -83,6 +83,13 @@ if (!supportRotarywing) then
 					
 					sleep 3;
 					_dude sideChat "Pretty much zero, LONGSWORD. BONANZA out.";
+					
+					RTB = false;
+					publicVariable "RTB";
+					supportRotarywing = false;
+					publicVariable "supportRotarywing";
+					supportRotarywingBusy = false;
+					publicVariable "supportRotarywingBusy";
 			};
 			
 			sleep 35;

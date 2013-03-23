@@ -29,7 +29,7 @@ class Mission
 		briefingName="Bonanza3";
 		briefingDescription="Special Forces ODA ""Bonanza-3"" is very busy indeed.";
 		resistanceWest=0;
-		startWeather=0.70999998;
+		startWeather=0.42999998;
 		startFog=0.26999998;
 		startWind=0.20999999;
 		startWindDir=50;
@@ -43,7 +43,8 @@ class Mission
 		year=2010;
 		month=11;
 		day=28;
-		minute=40;
+		hour=8;
+		minute=0;
 	};
 	class Groups
 	{
