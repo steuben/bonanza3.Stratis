@@ -1664,7 +1664,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			position[]={3342.0535,7.6070147,5799.7114};
@@ -1700,6 +1700,22 @@ class Mission
 				sound="Hints";
 				titleType="TEXT";
 				title="REJOICE! The sandpeople are dead!";
+			};
+		};
+		class Item2
+		{
+			position[]={3334.8726,5.7764111,5782.7852};
+			a=10;
+			b=10;
+			activationBy="BRAVO";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="forceControl";
+			expActiv="_ok = createDialog ""uiForceControlStart""; forceControlStart = true;";
+			class Effects
+			{
+				sound="Hints";
 			};
 		};
 	};
