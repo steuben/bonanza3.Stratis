@@ -38,7 +38,6 @@ gnrf_respawnInfo = [[hunter, 10], [atv1, 10],[atv2, 10]];
 
 
 // "Higher Command" - for sidechat purposes
-
 higherCommand = group commanderReich;
 commanderReich setGroupID ["LONGSWORD","GroupColor4"];
 

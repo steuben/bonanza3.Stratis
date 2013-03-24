@@ -9,18 +9,6 @@
   };
 
   
-// SUBLINES
-
-/*  
-		class subtitleH1_support_artillery : subtitleH1
-		  {
-			text = "ARTILLERY SUPPORT";
-			x = 0.415; y = 0.28;
-			
-		  };
-*/
-
-
 // BUTTONS
 
 
