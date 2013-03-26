@@ -8,13 +8,13 @@ removeAllWeapons _unit;
 
 
 // Helmet / Soft Cover
-_unit addHeadgear "H_HelmetB_paint";
+_unit addHeadgear "H_Cap_brn_SERO";
 
 // Carrier / Chestrig / Vest
 _unit addVest "V_PlateCarrierGL_rgr";
 
 // Uniform
-_unit addUniform "U_B_CombatUniform_mcam_vest";
+_unit addUniform "U_B_CombatUniform_mcam_tshirt";
 
 // Backpack
 _unit addBackpack "B_AssaultPack_mcamo";

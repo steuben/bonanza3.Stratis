@@ -31,7 +31,7 @@
 			text = "";
 		  };
 		  
-		   class headline 
+		   class headlineBG 
 		  {
 			idc = -1;
 			type =  0 ;  

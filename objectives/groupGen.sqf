@@ -6,7 +6,7 @@ _vehPos = _this select 1;
 _size = round (random 3)+3;
 _isVehicle = 40 call grnf_fnc_coinFlip;
 _unitClassNames = ["O_Soldier_lite_F", "O_Soldier_AR_F", "O_Soldier_LAT_F"];
-_vehicleClassNames = ["O_Galkin_MG_F", "O_Galkin_GMG_F"];
+_vehicleClassNames = ["O_Ifrit_MG_F", "O_Ifrit_GMG_F"];
 _ranks = ["Corporal", "Private"];
 _skill = gnrf_opforSkill;
 
