@@ -1,8 +1,8 @@
 
 private ["_infPos", "_vehPos", "_value", "_isVehicle", "_unitClassNames", "_ranks", "_skill", "_group", "_className", "_vehicle", "_crew", "_cargo", "_units"];
 
-_infPos = _this select 0;
-_vehPos = _this select 1;
+_infSpawn = _this select 0;
+_vehSpawn = _this select 1;
 _value = round (random 3)+3;
 _isVehicle = 40 call grnf_fnc_coinFlip;
 _unitClassNames = ["O_Soldier_lite_F", "O_Soldier_AR_F", "O_Soldier_LAT_F"];
@@ -14,7 +14,8 @@ _group = createGroup EAST;
 
 if (!_isVehicle) then
 {
-	_group setVariable ["size", _value];
+	_infPos = _infSpawn call bis_fnc_selectRandom;
+	_group setVariable ["value", _value];
 	_group setVariable ["isVehicle", false];
 	
 	if (_value > 4) then 
@@ -31,6 +32,7 @@ if (!_isVehicle) then
 	};
 } else
 {
+	_vehPos = _vehSpawn call bis_fnc_selectRandom;
 	_className = _vehicleClassNames call bis_fnc_selectRandom;
 		
 	_vehicle = _className createVehicle _vehPos;
@@ -59,15 +61,19 @@ if (!_isVehicle) then
 			case 2 :
 			{
 				_unit moveInCommander _vehicle;
+				if (vehicle _unit == _unit) then
+				{
+					_unit moveInCargo _vehicle;
+				};
 			};
 			default
 			{
-				_unit moveInCargo _vehicle
+				_unit moveInCargo _vehicle;
 			};
 		};
 		
-		_value = (count _units)*2;
-		_group setVariable ["size", _value];
+		_value = (count _units)*3;
+		_group setVariable ["value", _value];
 		_group setVariable ["isVehicle", true];
 	};
 };
