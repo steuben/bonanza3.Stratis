@@ -29,6 +29,8 @@ if (isServer) then
 	gnrf_fnc_partrolWpGen = compile preProcessFileLineNumbers "objectives\patrolWpGen.sqf";
 	gnrf_fnc_assaultA = compile preProcessFileLineNumbers "objectives\assault_typeA\assaultInit.sqf";
 	gnrf_fnc_groupGen = compile preProcessFileLineNumbers "objectives\groupGen.sqf";
+	gnrf_fnc_guardGen = compile preProcessFileLineNumbers "objectives\guardGen.sqf";
+	gnrf_fnc_populateArea = compile preProcessFileLineNumbers "objectives\populateArea.sqf";
 	[] execVM "objectives\locations.sqf";
 };
 	
