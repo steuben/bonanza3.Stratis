@@ -11,6 +11,8 @@ if (!isDedicated) then
 	[] execVM "client\eventHandlers.sqf";
 	[] execVM "extras\mapTool.sqf";
 	[] execVM "extras\assman\assmanInit.sqf";
+	[] execVM "extras\forceControl\forceControlInit.sqf";
+	
 	
 	if ((paramsArray select 0) == 1) then 
 	{

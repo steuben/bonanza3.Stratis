@@ -52,7 +52,7 @@
 			type = 1;
 			
 			x = 0.4;
-			y = 0.45
+			y = 0.45;
 			
 			text = "ROTARY WING";
 			action = "if (supportRotarywingBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportRotarywing) then {[0, player] execVM ""extras\assman\assets\rotaryWing\init.sqf""; assmanStart = false; closeDialog 0};   if (supportRotarywing) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissRotarywing""; };"	

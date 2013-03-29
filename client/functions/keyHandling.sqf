@@ -15,7 +15,7 @@ switch (_dikCode) do
 		
 	case 70 : 
 	{
-	
+		// SHIFT-CONTROL
 		if (_shift && _ctrlKey && !_alt && !debugModeOn) then  
 		{
 						
@@ -43,6 +43,7 @@ switch (_dikCode) do
 			breakTo "main";
 		};
 		
+		// SHIFT-CONTROL
 		if (_shift && _ctrlKey && !_alt && debugModeOn) then  
 		{
 			titleText ["Debug mode disabled", "PLAIN"];
@@ -51,8 +52,13 @@ switch (_dikCode) do
 			breakTo "main";
 		};	
 	
+		// Rollen
 		if (!_shift && !_ctrlKey && !_alt && !assmanStart) then  {[] execVM "extras\assman\assmanStateHandler.sqf";_ok = createDialog "uiAssmanStart"; assmanStart = true; _handled = true; breakTo "main";};
 		if (!_shift && !_ctrlKey && !_alt && assmanStart) then  {closeDialog 0; assmanStart = false; _handled = true; breakTo "main"};
+		
+		// ALT-Rollen
+		if (!_shift && !_ctrlKey && _alt && !forceControlStart) then  {[] execVM "extras\forceControl\forceControlStateHandler.sqf";_ok = createDialog "uiForceControlStart"; forceControlStart = true; _handled = true; breakTo "main";};
+		if (!_shift && !_ctrlKey && _alt && forceControlStart) then  {closeDialog 0; forceControlStart = false; _handled = true; breakTo "main"};
 	};
 };
 

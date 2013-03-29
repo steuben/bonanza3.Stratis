@@ -11,7 +11,7 @@
 		  idd = -1;
 		  movingEnable = true;
 		  
-		  controlsBackground[] = {"bgShape","headlineBG","titleHome"};
+		  controlsBackground[] = {"bgShape","headlineBG","titleHome", "btn_close", "btn_objective", "btn_loadout", "btn_team"};
 		  controls[] = {};
 		  
 		  objects[] = {};
