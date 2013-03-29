@@ -6,15 +6,10 @@ _infPatrol = _area getVariable "infPatrol";
 _vehPatrol = _area getVariable "vehPatrol";
 _infSpawn = _area getVariable "infSpawn";
 _vehSpawn = _area getVariable "vehSpawn";
-_terrain = _area getVariable "terrain";
-_name = _area getVariable "name";
 _guardPositions = _area getVariable "guard";
 _size = _area getVariable "size";
-_taskmarker = getPos _area;
+
 _opforValue = 0;
-
-[_name, _terrain, _taskmarker] execVM "objectives\assault_typeA\taskhandling.sqf";
-
 
 //create patrol groups
 while {_opforValue < _size} do
