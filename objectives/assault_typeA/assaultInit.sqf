@@ -9,6 +9,7 @@ _vehSpawn = _area getVariable "vehSpawn";
 _terrain = _area getVariable "terrain";
 _name = _area getVariable "name";
 _guardPositions = _area getVariable "guard";
+_size = _area getVariable "size";
 _taskmarker = getPos _area;
 
 
@@ -69,18 +70,29 @@ else
 					
 // Create OPFOR Guard Groups
 
-		//Group
-		if (!isNil "_guardPositions") then 
-		{
-			{
-				_opforGroup = createGroup EAST;
-				_infPos = _infSpawn call bis_fnc_selectRandom;
-				"O_Soldier_lite_F" createUnit [_infPos, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", 0.3, "Corporal"];
-				[_opforGroup, [_x]] spawn gnrf_fnc_partrolWpGen;
-				
-			} forEach _guardPositions;
-
-		};	
+if (!isNil "_guardPositions") then 
+{
+	_skill = gnrf_opforSkill;
+	_diffFactor = 0.7; //WIP - will be dependent on difficulty setting
+	_posCount = count _guardPositions;
+	_posCount = round (_posCount * _diffFactor);
+	
+	_posArray =+ _guardPositions;
+	
+	for "_i" from 1 to _posCount do
+	{
+		_opforGroup = createGroup EAST;
+		_spawnPos = _infSpawn call bis_fnc_selectRandom;
+		"O_Soldier_lite_F" createUnit [_spawnPos, _opforGroup, "opforTrashbin set [count opforTrashbin, this];", _skill, "Private"];
+		
+		_rand = floor(random count _posArray);
+		_guardPos = _posArray select _rand;
+		_posArray set [_rand, -1];
+		_posArray = _posArray - [-1];
+		[_opforGroup, [_guardPos]] spawn gnrf_fnc_partrolWpGen;
+		player sideChat format ["count: %1 ### guardPos: %2", count _posArray, _guardPos];
+	};
+};	
 
 
 publicVariable "opforTrashbin";

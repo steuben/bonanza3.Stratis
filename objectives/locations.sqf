@@ -9,6 +9,7 @@ _vehPatrol = [[[5236.47,5809.25,0],[4628.4,5877.45,0],[4988.53,6134.63,0]]];
 _terrain = "outpost";
 _name = "Camp Rogain";
 _guard = [[5025.22,5918.99,208.809],[4885.85,5888.56,0],[4963.49,5882.25,0],[5027.55,5866.24,0],[4977.81,5897.05,0],[5014.69,5954.8,0],[5030.7,5937.33,0],[5049.63,5877.89,0],[4892.65,5902.63,0],[4946.75,5856.29,0],[4944.57,5849.98,0]]; //optional
+_size = 80;
 
 gnrf_campRogain setVariable ["infSpawn", _infSpawn];
 gnrf_campRogain setVariable ["infPatrol", _infPatrol];
@@ -17,7 +18,9 @@ gnrf_campRogain setVariable ["vehPatrol", _vehPatrol];
 gnrf_campRogain setVariable ["terrain", _terrain];
 gnrf_campRogain setVariable ["name", _name];
 gnrf_campRogain setVariable ["guard", _guard];
+gnrf_campRogain setVariable ["size", _size];
 
 sleep 5;
 [] execVM "objectives\objectivesInit.sqf";
+
 

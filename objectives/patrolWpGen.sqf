@@ -57,7 +57,7 @@ if (count _posArray > 1) then
 	_wp setWaypointFormation "FILE";
 	_wp setWaypointCompletionRadius 8;
 	_wp setWaypointStatements ["true", "[group this] spawn gnrf_fnc_partrolWpGen;"];
-	_wp setWaypointTimeout [2, 3, 5];
+	_wp setWaypointTimeout [0, 0, 0];
 	
 } else
 {

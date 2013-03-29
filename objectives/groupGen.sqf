@@ -1,9 +1,9 @@
 
-private ["_infPos", "_vehPos", "_size", "_isVehicle", "_unitClassNames", "_ranks", "_skill", "_group", "_className", "_vehicle", "_crew", "_cargo", "_units"];
+private ["_infPos", "_vehPos", "_value", "_isVehicle", "_unitClassNames", "_ranks", "_skill", "_group", "_className", "_vehicle", "_crew", "_cargo", "_units"];
 
 _infPos = _this select 0;
 _vehPos = _this select 1;
-_size = round (random 3)+3;
+_value = round (random 3)+3;
 _isVehicle = 40 call grnf_fnc_coinFlip;
 _unitClassNames = ["O_Soldier_lite_F", "O_Soldier_AR_F", "O_Soldier_LAT_F"];
 _vehicleClassNames = ["O_Ifrit_MG_F", "O_Ifrit_GMG_F"];
@@ -14,16 +14,16 @@ _group = createGroup EAST;
 
 if (!_isVehicle) then
 {
-	_group setVariable ["size", _size];
+	_group setVariable ["size", _value];
 	_group setVariable ["isVehicle", false];
 	
-	if (_size > 4) then 
+	if (_value > 4) then 
 	{
 		"O_Soldier_TL_F" createUnit [_infPos, _group, "opforTrashbin set [count opforTrashbin, this];", _skill, "Major"];
-		_size = _size -1;
+		_value = _value -1;
 	};
 
-	for "_i" from 1 to _size do
+	for "_i" from 1 to _value do
 	{
 		_className = _unitClassNames call bis_fnc_selectRandom;
 		_rank = _ranks call bis_fnc_selectRandom;
@@ -66,8 +66,8 @@ if (!_isVehicle) then
 			};
 		};
 		
-		_size = (count _units)*2;
-		_group setVariable ["size", _size];
+		_value = (count _units)*2;
+		_group setVariable ["size", _value];
 		_group setVariable ["isVehicle", true];
 	};
 };
