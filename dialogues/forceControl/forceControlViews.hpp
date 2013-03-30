@@ -20,4 +20,21 @@
 		  
 		};
 		
+		// LOADOUT MAIN MENU
+
+		class uiForceControlLoadout
+		{
+
+		  idd = -1;
+		  movingEnable = true;
+		  
+		  controlsBackground[] = {"bgShape","headlineBG","titleLoadoutMain", "btn_close", "btn_backToStart", "btn_saveLoadout", "btn_loadoutTemplates"};
+		  controls[] = {};
+		  
+		  objects[] = {};
+		  
+		  #include "loadoutMainView.hpp"
+		  
+		};
+		
 		

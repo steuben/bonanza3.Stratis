@@ -144,3 +144,25 @@
 			
 		  }; 
 		  
+		  
+		 // BACK TO MAIN MENU - BUTTON 
+  
+		  class btn_backToStart:ButtonControlContentWide 
+			{
+			
+				idc = -1;
+				type = 1;
+				
+				x = 0.4;
+				y = 0.29;
+				
+				w = 0.515;
+				h = 0.07;
+				
+				font = "EtelkaMonospaceProBold";
+				sizeEx = 0.032;
+				
+				text = "BACK TO START";
+				action = "closeDialog 0;  [] execVM ""extras\forceControl\forceControlStateHandler.sqf""; _ok = createDialog ""uiForceControlStart"";"	
+			};
+				  

@@ -24,7 +24,7 @@
 			
 			text = "OBJECTIVE";
 			action ="";
-			//action = "if (supportArtyBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportArty) then {[0, player] execVM ""extras\assman\assets\arty\init.sqf""; assmanStart = false; closeDialog 0};   if (supportArty) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissArty""; };"	
+			
 		  };
 		  
 		  
@@ -40,8 +40,7 @@
 			y = 0.37
 			
 			text = "LOADOUT";
-			action ="";
-			//action = "if (supportArtyBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportArty) then {[0, player] execVM ""extras\assman\assets\arty\init.sqf""; assmanStart = false; closeDialog 0};   if (supportArty) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissArty""; };"	
+			action = "closeDialog 0; _ok = createDialog ""uiForceControlLoadout""; [] execVM ""extras\forceControl\forceControlStateHandler.sqf"";"	
 		  };
 		  
 		
@@ -58,7 +57,6 @@
 			
 			text = "TEAM";
 			action ="";
-			//action = "if (supportArtyBusy) exitWith {hint ""ASSET BUSEY""}; if (!supportArty) then {[0, player] execVM ""extras\assman\assets\arty\init.sqf""; assmanStart = false; closeDialog 0};   if (supportArty) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissArty""; };"	
 		  };
 		
 
