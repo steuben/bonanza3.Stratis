@@ -5,7 +5,7 @@ _taskmarker = getPos _area;
 _name = _area getVariable "name";
 
 //create task
-[_name, _terrain, _taskmarker] execVM "objectives\assault_typeA\taskhandling.sqf";
+[-2, {[_this select 0, _this select 1, _this select 2] execVM "objectives\assault_typeA\taskhandling.sqf";}, [_name, _terrain, _taskmarker]] call CBA_fnc_globalExecute;
 
 //populate area
 _area call gnrf_fnc_populateArea;	
