@@ -23,4 +23,3 @@ _taskmarker = _this select 2;
 		_trigger setTriggerArea[600,600,0,false];
 		_trigger setTriggerActivation["EAST","NOT PRESENT",false];
 		_trigger setTriggerStatements["this", "assaultTaskSteuben setTaskState 'Succeeded'; assaultTaskGnarfo setTaskState 'Succeeded'; taskhint ['Objective completed.', [0, 1, 0, 1], 'taskDone']; commanderReich sideChat 'Outstanding, BONANZA! Objective completed, Return to Base. LONGSWORD out.';", ""];
-		
