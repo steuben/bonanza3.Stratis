@@ -61,5 +61,16 @@ gnrf_globalTask setTaskState "Succeeded";
 taskhint ["Objective completed.", [0, 1, 0, 1], "taskDone"]; 
 commanderReich sideChat "Outstanding, BONANZA! Objective completed, Return to Base. LONGSWORD out.";
 
-//toDo hide/delete units and vehicles
-		
+// hide/delete units
+if (isServer) then
+{
+	sleep 30;
+	{_x setDamage 1} forEach opforTrashbin;
+	{hideBody _x} forEach opforTrashbin;
+	sleep 8;
+	{deleteVehicle _x} forEach opforTrashbin;
+	{deleteVehicle _x} forEach vehicleTrashbin;
+
+	opforTrashbin = [];
+	vehicleTrashbin = [];		
+};

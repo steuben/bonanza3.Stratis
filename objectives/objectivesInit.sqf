@@ -5,6 +5,7 @@ private ["_location", "_patrolPositions", "_spawnPositions", "_terrain", "_name"
 if (isNil "opforTrashbin") then
 {
 	opforTrashbin = [];
+	vehicleTrashbin = [];
 };
 
 //select random location

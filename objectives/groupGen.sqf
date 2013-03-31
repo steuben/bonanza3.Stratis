@@ -36,7 +36,7 @@ if (!_isVehicle) then
 	_className = _vehicleClassNames call bis_fnc_selectRandom;
 		
 	_vehicle = _className createVehicle _vehPos;
-	
+	vehicleTrashbin set [count vehicleTrashbin, _vehicle];
 	_crew = getText (configFile >> "cfgVehicles" >> _className >> "crew");
 	_cargo = getArray (configFile >> "cfgVehicles" >> _className >> "typicalcargo");
 	_units = [_crew] + _cargo;
