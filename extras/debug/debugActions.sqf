@@ -23,9 +23,6 @@ _testCode_act = player addAction [("<t color=""#1F67CC"">" + ("Test Code") + "</
 	call compile _string;
 	
 }],0,false, false,"","gnrf_debugMenu AND debugModeOn"];
-
-//TEST
-_debugAct = player addAction [("<t color=""#1F67CC"">" + ("Test Code") + "</t>"), "extras\callFromClipboard.sqf", [], 1, false, true, "", "gnrf_debugMenu AND debugModeOn"];
 */
 
 //copy Map coords to clipboard via mouseklick
@@ -86,3 +83,10 @@ _mapTool_act = player addAction [("<t color=""#1F67CC"">" + ("Map Tool") + "</t>
 	[] spawn gnrf_mapTool_fnc
 	
 }],0,false, false,"","gnrf_debugMenu AND debugModeOn AND (isNil 'gnrf_rulerMode')"];
+
+//kill all opfor units
+_killOpfor_act = player addAction [("<t color=""#1F67CC"">" + ("Kill OPFOR units") + "</t>"),"gen_action.sqf",[{
+	
+	{_x setDamage 1} forEach opforTrashbin;
+	
+}],0,false, false,"","gnrf_debugMenu AND debugModeOn"];

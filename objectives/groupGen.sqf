@@ -46,6 +46,7 @@ if (!_isVehicle) then
 		_className = _units select _i;
 		_rank = _ranks call bis_fnc_selectRandom;
 		_unit = _group createUnit [_className, _vehPos, [], 0, "FORM"];
+		opforTrashbin set [count opforTrashbin, _unit];
 		_unit setSkill _skill;
 		_unit setRank _rank;
 		switch (_i) do
