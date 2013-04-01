@@ -41,15 +41,23 @@ gnrf_areaCleared = false;
 _opforDetector=createTrigger["EmptyDetector",_taskmarker];
 _opforDetector setTriggerArea[200,200,0,false];
 _opforDetector setTriggerActivation["EAST","NOT PRESENT",true];
-_opforDetector setTriggerStatements["this", "gnrf_areaCleared = true", "gnrf_areaCleared = false"];
 _opforDetector setTriggerTimeout [30, 30, 30, true];
+_opforDetector setTriggerStatements["this", "gnrf_areaCleared = true", "gnrf_areaCleared = false"];
 
 gnrf_areaCaptured = false;
 _bluforDetector=createTrigger["EmptyDetector",_taskmarker];
 _bluforDetector setTriggerArea[90,90,0,false];
-_bluforDetector setTriggerActivation["WEST","PRESENT",true];
-_bluforDetector setTriggerStatements["this AND ((steuben in thisList) OR (gnarfo in thisList))", "gnrf_areaCaptured = true", "gnrf_areaCaptured = false"];
-_bluforDetector setTriggerTimeout [30, 30, 30, true];
+_bluforDetector setTriggerActivation["WEST","PRESENT",false];
+_bluforDetector setTriggerTimeout [35, 35, 35, true];
+_bluforDetector setTriggerStatements[
+"this AND ((steuben in thisList) OR (gnarfo in thisList))",
+"gnrf_areaCaptured = true; 
+if (!gnrf_areaCleared) then 
+{
+	commanderReich sideChat 'Outpost captured, clear surrounding area. [PLACEHOLDER]';
+};	
+", ""];
+
 
 waitUntil {sleep 2; gnrf_areaCleared AND gnrf_areaCaptured};
 
@@ -61,7 +69,7 @@ gnrf_globalTask setTaskState "Succeeded";
 taskhint ["Objective completed.", [0, 1, 0, 1], "taskDone"]; 
 commanderReich sideChat "Outstanding, BONANZA! Objective completed, Return to Base. LONGSWORD out.";
 
-// hide/delete units
+// clean up
 if (isServer) then
 {
 	sleep 30;
@@ -70,7 +78,9 @@ if (isServer) then
 	sleep 8;
 	{deleteVehicle _x} forEach opforTrashbin;
 	{deleteVehicle _x} forEach vehicleTrashbin;
-
+	{deleteGroup _x} forEach gnrf_groupTrashbin;
+	
 	opforTrashbin = [];
-	vehicleTrashbin = [];		
+	vehicleTrashbin = [];	
+	gnrf_groupTrashbin = [];
 };

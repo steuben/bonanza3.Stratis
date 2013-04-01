@@ -38,4 +38,7 @@ for "_i" from 1 to _posCount do
 
 	//store unit "value"
 	_opforGroup setVariable ["value", 1];
+	
+	//store group ID for clean up
+	gnrf_groupTrashbin set [count gnrf_groupTrashbin, _group];
 };

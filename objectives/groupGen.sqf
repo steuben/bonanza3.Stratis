@@ -11,6 +11,8 @@ _ranks = ["Corporal", "Private"];
 _skill = gnrf_opforSkill;
 
 _group = createGroup EAST;
+//store group ID for clean up
+gnrf_groupTrashbin set [count gnrf_groupTrashbin, _group];
 
 if (!_isVehicle) then
 {

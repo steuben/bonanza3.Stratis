@@ -2,12 +2,6 @@
 
 private ["_location", "_patrolPositions", "_spawnPositions", "_terrain", "_name", "_objective", "_objectiveType", "_guardPositions","_taskmarker"];
 
-if (isNil "opforTrashbin") then
-{
-	opforTrashbin = [];
-	vehicleTrashbin = [];
-};
-
 //select random location
 _location = [gnrf_campRogain] call bis_fnc_selectRandom; //add more locations to this array; define locations in locations.sqf
 

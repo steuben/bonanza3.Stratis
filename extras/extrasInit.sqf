@@ -2,12 +2,12 @@
 if (!isDedicated) then 
 {
 
-	////// client functions precompiled
+	// client functions precompiled
 	gnrf_playerRespawn_fnc = compile preProcessFileLineNumbers "client\functions\respawn.sqf";
 	grnf_keyHandling_fnc = compile preProcessFileLineNumbers "client\functions\keyHandling.sqf";
 	grnf_fnc_coinFlip = compile preProcessFileLineNumbers "extras\coinFlip.sqf";
 	
-	////// Scripts
+	// Scripts
 	[] execVM "client\eventHandlers.sqf";
 	[] execVM "extras\mapTool.sqf";
 	[] execVM "extras\assman\assmanInit.sqf";
@@ -26,14 +26,23 @@ if (!isDedicated) then
 //////host//////
 if (isServer) then 
 {
+	//precompile stuff
 	gnrf_fnc_partrolWpGen = compile preProcessFileLineNumbers "objectives\patrolWpGen.sqf";
 	gnrf_fnc_assaultA = compile preProcessFileLineNumbers "objectives\assault_typeA\assaultInit.sqf";
 	gnrf_fnc_groupGen = compile preProcessFileLineNumbers "objectives\groupGen.sqf";
 	gnrf_fnc_guardGen = compile preProcessFileLineNumbers "objectives\guardGen.sqf";
 	gnrf_fnc_populateArea = compile preProcessFileLineNumbers "objectives\populateArea.sqf";
 	[] execVM "objectives\locations.sqf";
+	
+	//init vars
+	opforTrashbin = [];
+	vehicleTrashbin = [];
+	gnrf_groupTrashbin = [];
 };
 	
+	
+//////global//////
+
 //define respawn position(s)	
 //add respawn pos - players always spawn at the nearest spawnpos. parameters:
 //[[position] OR global object name for dynamic position, offset (radius in m, 0 for exact positioning)] 	
