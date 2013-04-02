@@ -22,8 +22,8 @@
 			x = 0.4;
 			y = 0.29;
 			
-			text = "OBJECTIVE";
-			action ="";
+			text = "GENERATE OBJECTIVE";
+			action ="closeDialog 0; [] execVM ""objectives\objectivesInit.sqf"";";
 			
 		  };
 		  

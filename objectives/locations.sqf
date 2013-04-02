@@ -19,8 +19,3 @@ gnrf_campRogain setVariable ["terrain", _terrain];
 gnrf_campRogain setVariable ["name", _name];
 gnrf_campRogain setVariable ["guard", _guard];
 gnrf_campRogain setVariable ["size", _size];
-
-sleep 5;
-[] execVM "objectives\objectivesInit.sqf";
-
-

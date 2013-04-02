@@ -74,3 +74,6 @@ if (isServer) then
 	opforTrashbin = [];
 	vehicleTrashbin = [];		
 };
+
+objectiveAssigned = false;
+publicVariable "objectiveAssigned";

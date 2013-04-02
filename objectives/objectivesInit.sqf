@@ -1,4 +1,5 @@
-
+objectiveAssigned = true;
+publicVariable "objectiveAssigned";
 
 private ["_location", "_patrolPositions", "_spawnPositions", "_terrain", "_name", "_objective", "_objectiveType", "_guardPositions","_taskmarker"];
 

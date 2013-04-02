@@ -8,7 +8,7 @@ removeAllWeapons _unit;
 
 
 // Helmet / Soft Cover
-_unit addHeadgear "H_HelmetB_paint";
+_unit addHeadgear "H_HelmetB_light";
 
 // Carrier / Chestrig / Vest
 _unit addVest "V_PlateCarrierGL_rgr";
@@ -17,19 +17,18 @@ _unit addVest "V_PlateCarrierGL_rgr";
 _unit addUniform "U_B_CombatUniform_mcam_vest";
 
 // Backpack
-_unit addBackpack "B_AssaultPack_mcamo";
+_unit addBackpack "B_AssaultPack_cbr";
 
 
 
 // PRIMARY WEAPON MAGS 
-_unit addMagazines ["20Rnd_762x45_Mag", 14];
+_unit addMagazines ["20Rnd_762x45_Mag", 12];
 
 // PRIMARY WEAPON
 _unit addWeapon "arifle_MXM_Hamr_point_gripod_F";
 
 // PRIMARY WEAPON ATTACHMENTS
 _unit addPrimaryWeaponItem "optic_Arco";
-_unit addPrimaryWeaponItem "muzzle_snds_B";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
 
 
@@ -45,6 +44,7 @@ _unit addMagazines ["HandGrenade", 5];
 
 // Items
 
+_unit addWeapon "Binocular";
 _unit addWeapon "ItemGPS";
 _unit addItem  "FirstAidKit";
 _unit addItem  "FirstAidKit";
