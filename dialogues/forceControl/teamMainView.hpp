@@ -14,8 +14,8 @@
 		  
 		  
 		  
-		// ADD INFANTRY
-		class btn_addInfantry:ButtonControlContentWide
+		// DISMISS TEAM
+		class btn_clearTeam:ButtonControlContentWide
 		  {
 			
 			idc = 401;
@@ -24,21 +24,36 @@
 			x = 0.4;
 			y = 0.37;
 			
-			text = "ADD INFANTRY";
+			text = "DISMISS TEAM";
 			action ="";
 		  };
 		  
 		  
 		  
-		// ADD VEHICLES
-		class btn_addVehicle:ButtonControlContentWide
+		// ADD INFANTRY
+		class btn_addInfantry:ButtonControlContentWide
 		  {
 			
 			idc = 402;
 			type = 1;
 			
 			x = 0.4;
-			y = 0.45
+			y = 0.45;
+			
+			text = "ADD INFANTRY";
+			action ="";
+		  };
+		  
+		  
+		// ADD VEHICLES
+		class btn_addVehicles:ButtonControlContentWide
+		  {
+			
+			idc = 403;
+			type = 1;
+			
+			x = 0.4;
+			y = 0.53
 			
 			text = "ADD VEHICLES";
 			action ="";

@@ -45,7 +45,7 @@
 		  idd = -1;
 		  movingEnable = true;
 		  
-		  controlsBackground[] = {"bgShape","headlineBG","titleTeamMain", "btn_close", "btn_backToStart", "btn_addInfantry", "btn_addVehicles"};
+		  controlsBackground[] = {"bgShape4","headlineBG","titleTeamMain", "btn_close", "btn_backToStart", "btn_clearTeam", "btn_addInfantry", "btn_addVehicles"};
 		  controls[] = {};
 		  
 		  objects[] = {};

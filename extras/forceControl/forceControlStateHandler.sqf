@@ -23,4 +23,13 @@ sleep 0.07;
 		
 		// TEAM, only enabled in base
 		ctrlEnable [400, enable];
+		
+			// CLEAR TEAM
+			ctrlEnable [401, true];
+			
+			// ADD INFANTRY
+			ctrlEnable [402, true];
+			
+			// ADD VEHICLES
+			ctrlEnable [403, false];
 

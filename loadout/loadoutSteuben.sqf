@@ -29,7 +29,7 @@ _unit addMagazines ["30Rnd_65x39_caseless_mag_Tracer", 12];
 _unit addWeapon "arifle_MX_GL_ACO_point_F";
 
 // PRIMARY WEAPON ATTACHMENTS
-_unit addPrimaryWeaponItem "optic_Aco";
+_unit addPrimaryWeaponItem "optic_Arco";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
 
 

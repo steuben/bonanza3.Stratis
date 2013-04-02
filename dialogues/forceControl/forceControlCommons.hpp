@@ -3,7 +3,7 @@
 // BG CLASSES 
  
  
-		  // MAIN BG 
+		  // MAIN BG, 3 Buttons 
 		  
 		  class bgShape 
 		  {
@@ -17,6 +17,23 @@
 			sizeEx = 0.023;
 			x = 0.4; y = 0.2;
 			w = 0.515;  h = 0.33;
+			text = "";
+		  };
+		  
+		  // MAIN BG, 4 Buttons
+		  
+		   class bgShape4 
+		  {
+			idc = -1;
+			type =  0 ;  
+			style = 0; 
+			moving = true;
+			colorText[] = { 0, 0, 0, 1 };
+			colorBackground[] = { 0.0, 0.4, 0.8, 0.6 };
+			font = "EtelkaMonospaceProBold";
+			sizeEx = 0.023;
+			x = 0.4; y = 0.2;
+			w = 0.515;  h = 0.41;
 			text = "";
 		  };
 		  

@@ -56,7 +56,7 @@
 			y = 0.45;
 			
 			text = "TEAM";
-			action ="";
+			action ="closeDialog 0; _ok = createDialog ""uiForceControlTeam""; [] execVM ""extras\forceControl\forceControlStateHandler.sqf"";";
 		  };
 		
 
