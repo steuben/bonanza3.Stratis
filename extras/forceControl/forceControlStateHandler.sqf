@@ -3,7 +3,14 @@ sleep 0.07;
 // BUTTON STATES 
 
 		// OBJECTIVE
-		ctrlEnable [200, true];
+		if (!objectiveAssigned) then 
+		{
+			ctrlEnable [200, true];
+		};
+		if (objectiveAssigned) then 
+		{
+			ctrlEnable [200, false];
+		};
 		
 		// LOADOUT
 		ctrlEnable [300, true];
