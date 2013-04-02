@@ -1,32 +1,13 @@
+
 _name = _this select 0;
 _terrain = _this select 1;
 _taskmarker = _this select 2;
 
-/*
-// SETUP TASKS
 
-		assaultTaskSteuben = steuben createSimpleTask ["Assault"]; 
-		assaultTaskSteuben setSimpleTaskDescription [format ["BONANZA-3 is to plan and conduct an assault on %2 %1 immediately.", _name, _terrain], format ["Assault %1", _name], format ["%1", _name]];
-		assaultTaskSteuben setSimpleTaskDestination _taskmarker;
-		assaultTaskSteuben setTaskState "Assigned";
-		steuben setCurrentTask assaultTaskSteuben;
+commanderReich sideChat format ["BONANZA, this is LONGSOWRD. We need you to assault %1 ASAP, over.", _name];
+sleep 2;
+player sideChat "Roger that, LONGSWORD. We're on it. BONANZA out.";
 
-		assaultTaskGnarfo = gnarfo createSimpleTask ["Assault"]; 
-		assaultTaskGnarfo setSimpleTaskDescription [format ["BONANZA-3 is to plan and conduct an assault on %2 %1 immediately.", _name, _terrain], format ["Assault %1", _name], format ["%1", _name]];
-		assaultTaskGnarfo setSimpleTaskDestination _taskmarker;
-		assaultTaskGnarfo setTaskState "Assigned";
-		gnarfo setCurrentTask assaultTaskGnarfo;
-
-// SETUP TRIGGER		
-		_trigger=createTrigger["EmptyDetector",_taskmarker];
-		_trigger setTriggerArea[600,600,0,false];
-		_trigger setTriggerActivation["EAST","NOT PRESENT",false];
-		_trigger setTriggerStatements["this", "gnrf_globalTask setTaskState 'Succeeded'; gnrf_globalTask setTaskState 'Succeeded'; taskhint ['Objective completed.', [0, 1, 0, 1], 'taskDone']; commanderReich sideChat 'Outstanding, BONANZA! Objective completed, Return to Base. LONGSWORD out.';", ""];
-*/
-
-
-
-//test
 // SETUP TASK
 
 gnrf_globalTask = player createSimpleTask ["Assault"]; 
@@ -34,6 +15,7 @@ gnrf_globalTask setSimpleTaskDescription [format ["BONANZA-3 is to plan and cond
 gnrf_globalTask setSimpleTaskDestination _taskmarker;
 gnrf_globalTask setTaskState "Assigned";
 player setCurrentTask gnrf_globalTask;
+taskhint [format ["New Orders.\nAssault %1!", _name], [1, 1, 1, 1], "taskNew"];
 	
 // SETUP TRIGGER
 		
@@ -54,7 +36,11 @@ _bluforDetector setTriggerStatements[
 "gnrf_areaCaptured = true; 
 if (!gnrf_areaCleared) then 
 {
-	commanderReich sideChat 'Outpost captured, clear surrounding area. [PLACEHOLDER]';
+	player sideChat 'LONGSWORD, this is BONANZA. We have secured the objective, over.';
+	sleep 2.5;
+	commanderReich sideChat 'Copy that, BONANZA. Flush out and destroy remaining enemy forces in the area, how copy.';
+	sleep 2.5;
+	player sideChat 'Solid copy, LONGSWORD. BONANZA out.';
 };	
 ", ""];
 

@@ -37,4 +37,20 @@
 		  
 		};
 		
+		// TEAM MAIN MENU
+
+		class uiForceControlTeam
+		{
+
+		  idd = -1;
+		  movingEnable = true;
+		  
+		  controlsBackground[] = {"bgShape","headlineBG","titleTeamMain", "btn_close", "btn_backToStart", "btn_addInfantry", "btn_addVehicles"};
+		  controls[] = {};
+		  
+		  objects[] = {};
+		  
+		  #include "teamMainView.hpp"
+		  
+		};
 		

@@ -25,7 +25,7 @@ class Params
                 title = "Debug Mode";
                 values[] = {0, 1};
                 texts[] = {"Disabled", "Enabled"};
-                default = 1;
+                default = 0;
         };
 
         class setFriends

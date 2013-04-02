@@ -2,7 +2,7 @@ sleep 0.07;
 
 // BUTTON STATES 
 
-		// OBJECTIVE
+		// OBJECTIVE, disabled when objective is assigned
 		if (!objectiveAssigned) then 
 		{
 			ctrlEnable [200, true];
@@ -15,12 +15,12 @@ sleep 0.07;
 		// LOADOUT
 		ctrlEnable [300, true];
 		
-			// SAVE LOADOUT
+			// SAVE LOADOUT, always enabled
 			ctrlEnable [301, true];
 			
-			// LOADOUT TEMPLATES
+			// LOADOUT TEMPLATES, only enabled in base
 			ctrlEnable [302, false];
 		
-		// TEAM
-		ctrlEnable [400, false];
+		// TEAM, only enabled in base
+		ctrlEnable [400, enable];
 
