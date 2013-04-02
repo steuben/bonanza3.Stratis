@@ -6,13 +6,15 @@ if (!isDedicated) then
 	gnrf_playerRespawn_fnc = compile preProcessFileLineNumbers "client\functions\respawn.sqf";
 	grnf_keyHandling_fnc = compile preProcessFileLineNumbers "client\functions\keyHandling.sqf";
 	grnf_fnc_coinFlip = compile preProcessFileLineNumbers "extras\coinFlip.sqf";
+	gnrf_fnc_deployCCP =  compile preProcessFileLineNumbers "extras\assman\assets\ccp\deployCCP.sqf";
+	gnrf_fnc_ccpActions =  compile preProcessFileLineNumbers "extras\assman\assets\ccp\ccpActions.sqf";
 	
 	// Scripts
 	[] execVM "client\eventHandlers.sqf";
 	[] execVM "extras\mapTool.sqf";
 	[] execVM "extras\assman\assmanInit.sqf";
 	[] execVM "extras\forceControl\forceControlInit.sqf";
-	
+	[] call gnrf_fnc_ccpActions;
 	
 	if ((paramsArray select 0) == 1) then 
 	{

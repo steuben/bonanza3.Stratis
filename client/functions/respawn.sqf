@@ -75,3 +75,5 @@ if (debugModeOn) then
 {
 	gnrf_noDebugActions = true;
 };
+
+[] call gnrf_fnc_ccpActions;
