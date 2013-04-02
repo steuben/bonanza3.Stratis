@@ -27,3 +27,6 @@ If ((paramsArray select 1) == 0) then
 {
 	titleText ["Debug mode enabled. AI behaviour set to 'friendly'.", "PLAIN"];
 };
+
+//set player rank
+player addRating 1000000;

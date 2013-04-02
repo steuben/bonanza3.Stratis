@@ -39,7 +39,7 @@ _coordMode_act = player addAction [("<t color=""#1F67CC"">" + ("Save Map Pos") +
 	hintSilent format ['Position %1 added to clipboard', _pos];	
 	true;
 	";
-	
+
 }],0,false, true,"","gnrf_debugMenu AND debugModeOn"];
 
 //end map pos saving
