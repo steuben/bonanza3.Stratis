@@ -36,11 +36,8 @@ _bluforDetector setTriggerStatements[
 "gnrf_areaCaptured = true; 
 if (!gnrf_areaCleared) then 
 {
-	player sideChat 'LONGSWORD, this is BONANZA. We have secured the objective, over.';
-	sleep 2.5;
-	commanderReich sideChat 'Copy that, BONANZA. Flush out and destroy remaining enemy forces in the area, how copy.';
-	sleep 2.5;
-	player sideChat 'Solid copy, LONGSWORD. BONANZA out.';
+	player sideChat 'LONGSWORD, this is BONANZA. We have reached the objective, proceeding to flush out and destroy remaining enemy forces, over.';
+	commanderReich sideChat 'Copy that, BONANZA.';
 };	
 ", ""];
 
