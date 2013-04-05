@@ -1,51 +1,15 @@
 
-///CCP///
-
-//show ccp actions
-_testCCP_act = player addAction [("<t color=""#FEDC7D"">" + ("CCP") + "</t>"),"gen_action.sqf",[{
-	
-	gnrf_ccpAct = true;
-	
-}],0,false, false,"","isNil 'gnrf_ccpAct'"];
-
-//hide ccp actions
-_testCCP_act = player addAction [("<t color=""#FEDC7D"">" + ("Hide CCP Options") + "</t>"),"gen_action.sqf",[{
-	
-	gnrf_ccpAct = nil;
-	
-}],0,false, false,"","!isNil 'gnrf_ccpAct'"];
-
-//deploy ccp
-_testCCP_act = player addAction [("<t color=""#FEDC7D"">" + ("Deploy CCP") + "</t>"),"gen_action.sqf",[{
-	
-	[] call gnrf_fnc_deployCCP;
-	
-}],0,false, false,"","(isNil 'gnrf_handleCCP') AND (isNil 'gnrf_ccpObj') AND (!isNil 'gnrf_ccpAct')"];
-
-//reposition ccp
-_testCCP_act = player addAction [("<t color=""#FEDC7D"">" + ("Reposition CCP") + "</t>"),"gen_action.sqf",[{
-	
-	[] call gnrf_fnc_deployCCP;
-	
-}],0,false, false,"","(isNil 'gnrf_handleCCP') AND (!isNil 'gnrf_ccpObj') AND (!isNil 'gnrf_ccpAct')"];
-
-//deconstruct ccp
-_testCCP_act = player addAction [("<t color=""#FEDC7D"">" + ("Deconstruct CCP") + "</t>"),"gen_action.sqf",[{
-	
-	[] call gnrf_fnc_deconstructCCP;
-	
-}],0,false, false,"","(isNil 'gnrf_handleCCP') AND (!isNil 'gnrf_ccpObj') AND (!isNil 'gnrf_ccpAct')"];
 
 //confirm ccp
 _testCCP_act = player addAction [("<t color=""#FEDC7D"">" + ("Confirm") + "</t>"),"gen_action.sqf",[{
 	
 	gnrf_handleCCP = 0;
 	
-}],0,false, false,"","(gnrf_handleCCP ==1) AND (!isNil 'gnrf_ccpAct') AND gnrf_ccpInRange"];
+}],0,false, false,"","(gnrf_handleCCP ==1) AND gnrf_ccpInRange"];
 
 //cancel ccp
 _testCCP_act = player addAction [("<t color=""#FEDC7D"">" + ("Cancel") + "</t>"),"gen_action.sqf",[{
 	
 	gnrf_handleCCP = -1;
 	
-}],0,false, false,"","(gnrf_handleCCP ==1) AND (!isNil 'gnrf_ccpAct')"];
+}],0,false, false,"","gnrf_handleCCP ==1"];
