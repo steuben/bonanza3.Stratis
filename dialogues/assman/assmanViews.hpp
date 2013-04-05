@@ -35,3 +35,15 @@ class uiAssmanDismissRotarywing
   #include "assmanDismissRotarywing.hpp"
 };
 
+class uiAssmanHandleCCP 
+{
+
+  idd = -1;
+  movingEnable = true;
+  controlsBackground[] = {"bgShapeDismiss","titleBarText"};
+  controls[] = {"titleBarText","btn_backToStart","btn_deployCCP","btn_deconstructCCP","btn_close"};
+  objects[] = {};
+  
+  #include "assmanHandleCCP.hpp"
+};
+

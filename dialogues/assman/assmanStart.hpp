@@ -71,7 +71,7 @@
 			y = 0.53
 			
 			text = "CCP";
-			action = "if (supportCCP) exitWith {hint ""ASSET BUSEY""}; if (!supportCCP) then {[0, player] execVM ""extras\supportSquad\CCP.sqf""; assmanStart = false; closeDialog 0};   if (supportCCP) then { closeDialog 0; _ok = createDialog ""uiAssmanDismissCCP""; };"	
+			action = "closeDialog 0; _ok = createDialog ""uiAssmanHandleCCP""; [] execVM ""extras\assman\assmanStateHandler.sqf"";"	
 		  };
   
       

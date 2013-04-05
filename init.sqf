@@ -23,3 +23,6 @@ if (player == gnarfo) then
 
 //global variables
 gnrf_opforSkill = 0.5;
+
+
+

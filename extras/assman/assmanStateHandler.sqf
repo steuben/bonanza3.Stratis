@@ -12,7 +12,13 @@ sleep 0.1;
 		ctrlEnable [102, true];
 
 		// CCP
-		ctrlEnable [103, false];
+		ctrlEnable [103, true];
+				
+				// DEPLOY / REDEPLOY
+				ctrlEnable [40, true];
+				
+				// DECONSTRUCT
+				ctrlEnable [41, true];
 
 		// INFIL
 		ctrlEnable [104, false];
