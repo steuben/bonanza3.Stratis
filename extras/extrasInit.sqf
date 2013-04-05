@@ -9,6 +9,7 @@ if (!isDedicated) then
 	gnrf_fnc_ccpActions =  compile preProcessFileLineNumbers "extras\assman\assets\ccp\ccpActions.sqf";
 	gnrf_fnc_deployCCP =  compile preProcessFileLineNumbers "extras\assman\assets\ccp\deployCCP.sqf";
 	gnrf_fnc_deconstructCCP = compile preProcessFileLineNumbers "extras\assman\assets\ccp\deconstructCCP.sqf";
+
 	
 	// Scripts
 	[] execVM "client\eventHandlers.sqf";
@@ -35,6 +36,10 @@ if (isServer) then
 	gnrf_fnc_groupGen = compile preProcessFileLineNumbers "objectives\groupGen.sqf";
 	gnrf_fnc_guardGen = compile preProcessFileLineNumbers "objectives\guardGen.sqf";
 	gnrf_fnc_populateArea = compile preProcessFileLineNumbers "objectives\populateArea.sqf";
+		gnrf_fnc_getBuildingPos = compile preProcessFileLineNumbers "functions\getBuildingPos.sqf";
+	gnrf_fnc_gotoBuildingPos = compile preProcessFileLineNumbers "objectives\garrison\gotoBuildingPos.sqf";
+	
+	//scripts
 	[] execVM "objectives\locations.sqf";
 	
 	//init vars
