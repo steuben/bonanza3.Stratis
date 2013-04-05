@@ -32,12 +32,7 @@ _testCCP_act = player addAction [("<t color=""#FEDC7D"">" + ("Reposition CCP") +
 //deconstruct ccp
 _testCCP_act = player addAction [("<t color=""#FEDC7D"">" + ("Deconstruct CCP") + "</t>"),"gen_action.sqf",[{
 	
-	deleteVehicle gnrf_ccpObj;
-	gnrf_ccpObj = nil;
-	gnrf_respawnInfo set [count gnrf_respawnInfo, [gnrf_ccpObj, 5]];//
-	gnrf_respawnInfo set [gnrf_ccpRespawnArrayIndex, -1];
-	gnrf_respawnInfo = gnrf_respawnInfo - [-1];
-	gnrf_ccpRespawnArrayIndex = nil;
+	[] call gnrf_fnc_deconstructCCP;
 	
 }],0,false, false,"","(isNil 'gnrf_handleCCP') AND (!isNil 'gnrf_ccpObj') AND (!isNil 'gnrf_ccpAct')"];
 
