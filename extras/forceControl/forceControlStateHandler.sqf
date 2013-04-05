@@ -1,4 +1,4 @@
-sleep 0.07;
+sleep 0.02;
 
 // BUTTON STATES 
 

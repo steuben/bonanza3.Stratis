@@ -1,4 +1,4 @@
-sleep 0.1;
+sleep 0.02;
 
 // BUTTON STATES (Main Menu) 
 
@@ -15,7 +15,17 @@ sleep 0.1;
 		ctrlEnable [103, true];
 				
 				// DEPLOY / REDEPLOY
+				
 				ctrlEnable [40, true];
+				
+				if (isNil "gnrf_ccpObj") then 
+				{
+					ctrlSetText [40, "DEPLOY"];
+				};
+				if (!isNil "gnrf_ccpObj") then 
+				{
+					ctrlSetText [40, "REDEPLOY"];
+				};
 				
 				// DECONSTRUCT
 				ctrlEnable [41, true];
