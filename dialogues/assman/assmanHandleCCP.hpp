@@ -24,10 +24,10 @@ class titleHandleCCP:titleBarText
     sizeEx = 0.054;
 			
 	text = "DEPLOY CCP";
-	action = "[] call gnrf_fnc_deployCCP; closeDialog 0;"	
+	action = "[] spawn gnrf_fnc_deployCCP; closeDialog 0;"	
   };
 
-   class btn_deconstructCCP:ButtonControlContentWide 
+ class btn_deconstructCCP:ButtonControlContentWide 
   {
     
 	  idc = 41;
@@ -39,5 +39,5 @@ class titleHandleCCP:titleBarText
     sizeEx = 0.054;
 			
 	text = "DECONSTRUCT CCP";
-	action = "[] call gnrf_fnc_deconstructCCP; closeDialog 0;"	
+	action = "[] spawn gnrf_fnc_deconstructCCP; closeDialog 0;"	
   };

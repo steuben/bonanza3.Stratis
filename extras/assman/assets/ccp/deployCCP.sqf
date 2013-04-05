@@ -22,7 +22,7 @@
 		_pos = screenToWorld [0.5,0.5];
 		_mark setPos [_pos select 0, _pos select 1, _z];
 		
-		//sleep 0.02;
+		sleep 0.02;
 	};
 	
 	if ((!alive player) OR (gnrf_handleCCP < 0)) exitWith
