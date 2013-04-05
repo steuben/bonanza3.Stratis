@@ -110,8 +110,6 @@ _savePosAndDir_act = player addAction [("<t color=""#1F67CC"">" + ("Save My Pos 
 //test garrison
 _garrison_act = player addAction [("<t color=""#1F67CC"">" + ("Test Garrison") + "</t>"),"gen_action.sqf",[{
 
-
-	_4dPosArray = [[4989.1,5927.08,211.562,12.0072],[4982,5918.95,211.571,245.412],[4986.65,5913.68,211.519,195.862],[4993.46,5922.96,209.152,59.6752],[5021.23,5943.76,212.34,185.293],[5017.22,5943.69,212.344,275.543]];
-	[_4dPosArray] execVM "objectives\garrisonGen.sqf";
+	[gnrf_campRogain] execVM "objectives\garrison\garrisonGen.sqf";
 	
 }],0,false, false,"","gnrf_debugMenu AND debugModeOn"];
