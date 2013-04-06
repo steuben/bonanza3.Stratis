@@ -2,6 +2,7 @@
 	private ["_mark", "_dis", "_z", "_pos"];
 
 	gnrf_handleCCP = 1;
+	//publicVariable "gnrf_handleCCP";
 	
 	_mark = createVehicle ["Sign_Arrow_Location_F", [0,0,5000], [], 0, ""];
 			
@@ -29,6 +30,7 @@
 	{
 		deleteVehicle _mark;
 		gnrf_handleCCP = nil;
+		//publicVariable "gnrf_handleCCP";
 	};
 	
 	_h = createVehicle ["Land_HelipadEmpty_F", getPos _mark, [], 0, ""];
@@ -41,6 +43,8 @@
 		gnrf_ccpObj = createVehicle ["B_supplyCrate_F", _pos, [], 0, ""];
 		gnrf_ccpRespawnArrayIndex = count gnrf_respawnInfo;
 		gnrf_respawnInfo set [count gnrf_respawnInfo, [gnrf_ccpObj, 5]];
+		publicVariable "gnrf_ccpObj";
+		publicVariable "gnrf_respawnInfo";
 	}
 	else
 	{	
@@ -48,3 +52,4 @@
 	};
 	
 	gnrf_handleCCP = nil;
+	//publicVariable "gnrf_handleCCP";

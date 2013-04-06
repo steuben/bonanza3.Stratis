@@ -23,7 +23,7 @@ gnrf_areaCleared = false;
 _opforDetector=createTrigger["EmptyDetector",_taskmarker];
 _opforDetector setTriggerArea[200,200,0,false];
 _opforDetector setTriggerActivation["EAST","NOT PRESENT",true];
-_opforDetector setTriggerTimeout [30, 30, 30, true];
+_opforDetector setTriggerTimeout [0, 0, 0, true];
 _opforDetector setTriggerStatements["this", "gnrf_areaCleared = true", "gnrf_areaCleared = false"];
 
 gnrf_areaCaptured = false;
