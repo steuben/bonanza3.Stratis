@@ -39,6 +39,11 @@ _unit addMagazines ["30Rnd_9x21_Mag", 2];
 // SECONDARY WEAPON
 _unit addWeapon "hgun_P07_F";
 
+// LAUNCHER
+_unit addMagazines ["NLAW_F", 2];
+_unit addWeapon "launch_NLAW_F";
+
+
 // Grenades
 _unit addMagazines ["HandGrenade", 5];
 

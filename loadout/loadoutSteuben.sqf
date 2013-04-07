@@ -35,13 +35,14 @@ _unit addPrimaryWeaponItem "acc_pointer_IR";
 
 // SECONDARY WEAPON MAGS / 40mm Grenades
 _unit addMagazines ["30Rnd_9x21_Mag", 2];
-_unit addMagazines ["1Rnd_HE_Grenade_shell", 8];
+_unit addMagazines ["1Rnd_HE_Grenade_shell", 5];
 
 // SECONDARY WEAPON
 _unit addWeapon "hgun_P07_F";
 
-// Grenades
+// Grenades & 'splosives'
 _unit addMagazines ["HandGrenade", 6];
+_unit addMagazines ["SatchelCharge_Remote_Mag", 3];
 
 // Items
 

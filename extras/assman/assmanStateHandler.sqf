@@ -14,21 +14,22 @@ sleep 0.02;
 		// CCP
 		ctrlEnable [103, true];
 				
-				// DEPLOY / REDEPLOY
+				// DEPLOY(40) / REDEPLOY(40) / DECONSTRUCT(41)
 				
 				ctrlEnable [40, true];
 				
 				if (isNil "gnrf_ccpObj") then 
 				{
 					ctrlSetText [40, "DEPLOY"];
+					ctrlEnable [41, false];
 				};
 				if (!isNil "gnrf_ccpObj") then 
 				{
 					ctrlSetText [40, "REDEPLOY"];
+					ctrlEnable [41, true];
 				};
 				
-				// DECONSTRUCT
-				ctrlEnable [41, true];
+				
 
 		// INFIL
 		ctrlEnable [104, false];
