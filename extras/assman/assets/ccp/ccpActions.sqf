@@ -1,5 +1,5 @@
 
-
+//not visible for steuben
 //confirm ccp
 _testCCP_act = player addAction [("<t color=""#FEDC7D"">" + ("Confirm") + "</t>"),"gen_action.sqf",[{
 	

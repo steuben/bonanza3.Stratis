@@ -49,7 +49,7 @@ _playerPos = player getVariable "deathPos";
 {
 	_pos = _x select 0;
 	
-	if (typeName _pos == "OBJECT") then 
+	if (typeName _pos == "OBJECT") then // generic error in expression for steuben at respawn, ccp deployed by gnarfo
 	{
 		_pos = getPos _pos;
 	};
