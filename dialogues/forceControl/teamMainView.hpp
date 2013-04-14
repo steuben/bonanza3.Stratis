@@ -41,7 +41,7 @@
 			y = 0.45;
 			
 			text = "ADD INFANTRY";
-			action ="[] execVM ""extras\forceControl\addInfantry\addRifleman.sqf"";";
+			action ="closeDialog 0; _ok = createDialog ""uiForceControlTeamAddInfantry"";";
 		  };
 		  
 		  

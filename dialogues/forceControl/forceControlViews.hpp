@@ -53,4 +53,21 @@
 		  #include "teamMainView.hpp"
 		  
 		};
+
+		// TEAM ADD INFANTRY MENU
+
+		class uiForceControlTeamAddInfantry
+		{
+
+		  idd = -1;
+		  movingEnable = true;
+		  
+		  controlsBackground[] = {"bgShapeLarge", "headlineBGWide", "btn_close_large" };
+		  controls[] = {"titleTeamAddInfantry"};
+		  
+		  objects[] = {};
+		  
+		  #include "teamAddInfantryView.hpp"
+		  
+		};
 		

@@ -22,22 +22,27 @@
 		  
 		  // MAIN BG, 4 Buttons
 		  
-		   class bgShape4 
+		  class bgShape4 : bgShape
 		  {
-			idc = -1;
-			type =  0 ;  
-			style = 0; 
-			moving = true;
-			colorText[] = { 0, 0, 0, 1 };
-			colorBackground[] = { 0.0, 0.4, 0.8, 0.6 };
-			font = "EtelkaMonospaceProBold";
-			sizeEx = 0.023;
+			
 			x = 0.4; y = 0.2;
 			w = 0.515;  h = 0.41;
-			text = "";
+
 		  };
+
+		  // LARGE BG
+
+		  class bgShapeLarge : bgShape
+		  {
+			
+			x = -0.25; y = 0.05;
+			w = 1.5;  h = 1;
+
+		  };
+
+
 		  
-		   class headlineBG 
+		  class headlineBG 
 		  {
 			idc = -1;
 			type =  0 ;  
@@ -50,6 +55,14 @@
 			x = 0.4; y = 0.2;
 			w = 0.515;  h = 0.08;
 			text = "";
+		  };
+
+		  class headlineBGWide : headlineBG 
+		  {
+			
+			x = -0.25; y = 0.05;
+			w = 1.5;  h = 0.08;
+
 		  };
 
 
@@ -70,6 +83,13 @@
 	x = 0.415; y = 0.208;
 	w = 0.515;  h = 0.07;
 	text = "";
+  };
+
+  class titleBarTextLarge : titleBarText
+  {
+	
+	x = -0.23; y = 0.058;
+	w = 0.515;  h = 0.07;
   };
   
   
@@ -116,6 +136,14 @@
 			
 			text = "CLOSE [X]";
 			
+		  };
+
+		  class btn_close_large: btn_close 
+		  {
+					
+			x = 1.115; y = 0.053;
+			h = 0.08; w = 0.14;
+						
 		  };
 		  
 		  // MAIN MENU BUTTON
