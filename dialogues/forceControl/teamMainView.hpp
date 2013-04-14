@@ -25,7 +25,7 @@
 			y = 0.37;
 			
 			text = "DISMISS TEAM";
-			action ="";
+			action ="[] execVM ""extras\forceControl\clearTeam.sqf"";";
 		  };
 		  
 		  
@@ -41,7 +41,7 @@
 			y = 0.45;
 			
 			text = "ADD INFANTRY";
-			action ="";
+			action ="[] execVM ""extras\forceControl\addInfantry\addRifleman.sqf"";";
 		  };
 		  
 		  
