@@ -18,12 +18,11 @@
 			hunter addItemCargo ["NVGoggles",100];
 			
 			// Weapons
-			hunter addWeaponCargo ["arifle_MX_Hamr_point_grip_F",100];
-			hunter addWeaponCargo ["arifle_MX_SW_ARCO_point_gripod_F",100];
-			hunter addWeaponCargo ["arifle_MX_SW_Hamr_point_gripod_F",100];
-			hunter addWeaponCargo ["arifle_MXC_ACO_point_grip_mzls_F",100];
-			hunter addWeaponCargo ["arifle_MXM_Hamr_point_gripod_F",100];
-			hunter addWeaponCargo ["arifle_MX_GL_Hamr_point_mzls_F",100];
+			hunter addWeaponCargo ["arifle_MX_F",100];
+			hunter addWeaponCargo ["arifle_MX_GL_F",100];
+			hunter addWeaponCargo ["arifle_MXC_F",100];
+			hunter addWeaponCargo ["arifle_MX_SW_F",100];
+			hunter addWeaponCargo ["arifle_MXM_F",100];
 
 			// Magazines
 			hunter addMagazineCargo ["30Rnd_65x39_caseless_mag_Tracer",100];

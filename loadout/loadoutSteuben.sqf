@@ -6,15 +6,19 @@ _unit = steuben;
 removeAllWeapons _unit;
 
 
+// NVG's in inventory, not applied
+_unit unassignItem "NVGoggles";
+_unit addWeapon "NVGoggles";
+_unit addItem "NVGoggles";
 
 // Helmet / Soft Cover
-_unit addHeadgear "H_HelmetB_paint";
+_unit addHeadgear "H_Booniehat_mcamo";
 
 // Carrier / Chestrig / Vest
 _unit addVest "V_PlateCarrierGL_rgr";
 
 // Uniform
-_unit addUniform "U_B_CombatUniform_mcam_tshirt";
+_unit addUniform "U_B_CombatUniform_mcam_vest";
 
 // Backpack
 //_unit addBackpack "B_AssaultPack_mcamo";
@@ -23,10 +27,10 @@ _unit addBackpack "B_Kitbag_cbr";
 
 
 // PRIMARY WEAPON MAGS 
-_unit addMagazines ["30Rnd_65x39_caseless_mag_Tracer", 12];
+_unit addMagazines ["FHQ_30Rnd_556x45_Stanag_Tracer_Red", 12];
 
 // PRIMARY WEAPON
-_unit addWeapon "arifle_MX_GL_ACO_point_F";
+_unit addWeapon "FHQ_M4A1_M203_TAN";
 
 // PRIMARY WEAPON ATTACHMENTS
 _unit addPrimaryWeaponItem "optic_Arco";

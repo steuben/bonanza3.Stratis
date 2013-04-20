@@ -14,7 +14,7 @@ _unit addHeadgear "H_HelmetB_light";
 _unit addVest "V_PlateCarrierGL_rgr";
 
 // Uniform
-_unit addUniform "U_B_CombatUniform_mcam_vest";
+_unit addUniform "U_B_CombatUniform_mcam";
 
 // Backpack
 _unit addBackpack "B_AssaultPack_cbr";
@@ -25,7 +25,7 @@ _unit addBackpack "B_AssaultPack_cbr";
 _unit addMagazines ["20Rnd_762x45_Mag", 12];
 
 // PRIMARY WEAPON
-_unit addWeapon "arifle_MXM_Hamr_point_gripod_F";
+_unit addWeapon "arifle_MXM_F";
 
 // PRIMARY WEAPON ATTACHMENTS
 _unit addPrimaryWeaponItem "optic_Arco";
