@@ -21,6 +21,9 @@ maxPlayers = 10;
 // User Interface Classes outsourced to:
 #include "dialogues\ui.hpp"
 
+// Notification Classes outsourced to:
+#include "notifications.hpp"
+
 //Parameters - Funfact: boolean values are treated as 0 (false) and 1(true) when checked in a script
 class Params
 {

@@ -15,7 +15,10 @@ gnrf_globalTask setSimpleTaskDescription [format ["BONANZA-3 is to plan and cond
 gnrf_globalTask setSimpleTaskDestination _taskmarker;
 gnrf_globalTask setTaskState "Assigned";
 player setCurrentTask gnrf_globalTask;
-taskhint [format ["New Orders.\nAssault %1!", _name], [1, 1, 1, 1], "taskNew"];
+
+//Task Notification
+["TaskAssigned",["Assault",_name]] call bis_fnc_showNotification;
+
 	
 // SETUP TRIGGER
 		
@@ -49,7 +52,9 @@ gnrf_areaCaptured = nil;
 deleteVehicle _opforDetector;
 deleteVehicle _bluforDetector;
 gnrf_globalTask setTaskState "Succeeded"; 
-taskhint ["Objective completed.", [0, 1, 0, 1], "taskDone"]; 
+
+//Task Notification
+["TaskComplete",["The objective has been seized.",_name]] call bis_fnc_showNotification;
 commanderReich sideChat "Outstanding, BONANZA! Objective completed, Return to Base. LONGSWORD out.";
 
 // clean up
