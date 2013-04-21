@@ -13,7 +13,6 @@
 
 		  
 		  
-		  
 		// SAVE LOADOUT
 		class btn_saveLoadout:ButtonControlContentWide
 		  {

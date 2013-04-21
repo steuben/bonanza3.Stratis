@@ -52,30 +52,9 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3257.8713,5.387002,5791.2998};
-					azimut=-27.993021;
-					id=0;
-					side="WEST";
-					vehicle="B_Soldier_TL_F";
-					player="PLAYER COMMANDER";
-					leader=1;
-					rank="CAPTAIN";
-					skill=1;
-					text="steuben";
-				};
-			};
-		};
-		class Item1
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
 					position[]={3273.47,4.9894242,5810.9551};
 					azimut=-134.32916;
-					id=1;
+					id=0;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
 					leader=1;
@@ -101,12 +80,33 @@ class Mission
 				class Item1
 				{
 					position[]={3273.47,4.9894242,5810.9551};
-					id=1;
+					id=0;
 					name="commanderReich";
 					class Effects
 					{
 					};
 					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3257.7344,5.3888378,5791.1162};
+					azimut=-27.993;
+					id=1;
+					side="WEST";
+					vehicle="B_soldier_exp_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CAPTAIN";
+					skill=1;
+					text="steuben";
 				};
 			};
 		};
@@ -118,8 +118,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3260.5334,5.3520174,5793.4658};
-					azimut=303.45435;
+					position[]={3260.4026,5.3661041,5792.7451};
+					azimut=303.45401;
 					id=2;
 					side="WEST";
 					vehicle="B_soldier_M_F";

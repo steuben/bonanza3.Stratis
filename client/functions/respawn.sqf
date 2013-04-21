@@ -7,6 +7,9 @@ removeAllWeapons player;
 removeUniform player;
 removeVest player;
 
+player unassignItem "NVGoggles";
+player removeItem "NVGoggles";
+
 _magazines = player getVariable "magazines";
 _weapons = player getVariable "weapons";
 _primaryWeaponItems = player getVariable "primaryWeaponItems"; 
@@ -21,20 +24,23 @@ _backpack = player getVariable "backpack";
 _backpackItems = player getVariable "backpackItems";
 _goggles = player getVariable "goggles";
 
+
 player addUniform _uniform;
 player addVest _vest;
 player addHeadgear _headgear;
 player addGoggles _goggles;
 player addBackpack _backpack;
-{player addItem _x} forEach _uniformItems;
-{player addItem _x} forEach _vestItems;
 {player addMagazine _x} forEach _magazines;
+{player addItem _x} forEach _vestItems;
+{player addItem _x} forEach _uniformItems;
 {player addWeapon _x} forEach _weapons;
 {player addPrimaryWeaponItem _x} forEach _primaryWeaponItems;
 {player addSecondaryWeaponItem _x} forEach _secondaryWeaponItems;
 {player addHandgunItem _x} forEach _handgunItems;
 {player addItem _x} forEach _backpackItems;
 player addWeapon "ItemGPS";
+
+player addItem "NVGoggles";
 
 reload player;
 

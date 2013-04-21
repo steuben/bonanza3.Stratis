@@ -6,10 +6,10 @@ _unit = steuben;
 removeAllWeapons _unit;
 
 
-// NVG's in inventory, not applied
+// NVG's to Inventory
 _unit unassignItem "NVGoggles";
-_unit addWeapon "NVGoggles";
-_unit addItem "NVGoggles";
+_unit removeItem "NVGoggles";
+
 
 // Helmet / Soft Cover
 _unit addHeadgear "H_Booniehat_mcamo";
@@ -33,7 +33,7 @@ _unit addMagazines ["FHQ_30Rnd_556x45_Stanag_Tracer_Red", 12];
 _unit addWeapon "FHQ_M4A1_M203_TAN";
 
 // PRIMARY WEAPON ATTACHMENTS
-_unit addPrimaryWeaponItem "optic_Arco";
+_unit addPrimaryWeaponItem "optic_Hamr";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
 
 
@@ -44,7 +44,7 @@ _unit addMagazines ["1Rnd_HE_Grenade_shell", 5];
 // SECONDARY WEAPON
 _unit addWeapon "hgun_P07_F";
 
-// Grenades & 'splosives'
+// Grenades & splosives
 _unit addMagazines ["HandGrenade", 6];
 _unit addMagazines ["SatchelCharge_Remote_Mag", 3];
 

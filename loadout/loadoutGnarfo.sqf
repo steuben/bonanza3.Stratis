@@ -25,7 +25,7 @@ _unit addBackpack "B_AssaultPack_cbr";
 _unit addMagazines ["20Rnd_762x45_Mag", 12];
 
 // PRIMARY WEAPON
-_unit addWeapon "arifle_MXM_F";
+_unit addWeapon "srifle_EBR_F";
 
 // PRIMARY WEAPON ATTACHMENTS
 _unit addPrimaryWeaponItem "optic_Arco";

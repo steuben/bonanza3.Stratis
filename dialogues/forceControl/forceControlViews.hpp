@@ -37,37 +37,39 @@
 		  
 		};
 		
-		// TEAM MAIN MENU
+		// TEAM MENU
 
-		class uiForceControlTeam
-		{
+				// TEAM MAIN VIEW
 
-		  idd = -1;
-		  movingEnable = true;
-		  
-		  controlsBackground[] = {"bgShape4","headlineBG","titleTeamMain", "btn_close", "btn_backToStart", "btn_clearTeam", "btn_addInfantry", "btn_addVehicles"};
-		  controls[] = {};
-		  
-		  objects[] = {};
-		  
-		  #include "teamMainView.hpp"
-		  
-		};
+				class uiForceControlTeam
+				{
 
-		// TEAM ADD INFANTRY MENU
+				  idd = -1;
+				  movingEnable = true;
+				  
+				  controlsBackground[] = {"bgShape4","headlineBG","titleTeamMain", "btn_close", "btn_backToStart", "btn_clearTeam", "btn_addInfantry", "btn_addVehicles"};
+				  controls[] = {};
+				  
+				  objects[] = {};
+				  
+				  #include "teamMainView.hpp"
+				  
+				};
 
-		class uiForceControlTeamAddInfantry
-		{
+				// TEAM ADD INFANTRY MENU
 
-		  idd = -1;
-		  movingEnable = true;
-		  
-		  controlsBackground[] = {"bgShapeLarge", "headlineBGWide", "btn_close_large" };
-		  controls[] = {"titleTeamAddInfantry"};
-		  
-		  objects[] = {};
-		  
-		  #include "teamAddInfantryView.hpp"
-		  
-		};
+				class uiForceControlTeamAddInfantry
+				{
+
+				  idd = -1;
+				  movingEnable = true;
+				  
+				  controlsBackground[] = {"bgShapeLarge", "headlineBGWide", "btn_close_large" };
+				  controls[] = {"titleTeamAddInfantry", "subRifleman","subGrenadier","btn_riflemanBasic","btn_riflemanAssault","btn_riflemanHeavy","btn_grenadierBasic","btn_grenadierAssault","btn_grenadierHeavy"};
+				  
+				  objects[] = {};
+				  
+				  #include "teamAddInfantryView.hpp"
+				  
+				};
 		
