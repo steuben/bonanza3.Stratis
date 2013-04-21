@@ -9,7 +9,7 @@ respawnDelay = 5;
 author="GNARF compound";
 OnLoadName = "BONANZA-3";
 OnLoadMission = "Special Forces ODA Bonanza-3 is very busy indeed.";
-//loadScreen = "images\loadScreen.paa";
+loadScreen = "data\images\bonanzaLoadingScreenBig.paa";
 
 class Header
 {

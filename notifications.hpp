@@ -18,7 +18,7 @@ class CfgNotifications
 			{
 				title = "Task Completed.";
 				iconPicture = "\A3\ui_f\data\map\MapControl\taskicondone_ca.paa";
-				description = "Mission Accomplished:<br/>%1";
+				description = "%2:<br/>%1";
 				priority = 7;
 			};
 			class TaskFailed
