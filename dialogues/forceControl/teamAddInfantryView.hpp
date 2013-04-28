@@ -46,7 +46,7 @@
 					y = 0.333;
 					
 					text = "ASSAULT";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addRiflemanAssault.sqf"";"
 					
 				}; 
 
@@ -90,7 +90,7 @@
 					y = 0.248;
 					
 					text = "BASIC";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addGrenadierBasic.sqf"";"
 					
 				};
 
@@ -104,7 +104,7 @@
 					y = 0.333;
 					
 					text = "ASSAULT";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addGrenadierAssault.sqf"";"
 					
 				}; 
 

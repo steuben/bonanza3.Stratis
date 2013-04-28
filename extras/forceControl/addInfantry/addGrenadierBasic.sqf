@@ -1,6 +1,6 @@
 
  // BASIC RIFLEMAN
-_unitClass = "B_Soldier_F";
+_unitClass = "B_Soldier_GL_F";
 
 // CREATE
 _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
@@ -9,7 +9,7 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 
 // UNIT LOADOUT
 //
-//			Class: Basic Rifleman
+//			Class: Basic Grenadier
 //			Primary Weapon: MX 
 //			Optics: Acog
 //			Extras: Grenades
@@ -25,7 +25,7 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 			unit addVest "V_PlateCarrier1_cbr";
 
 			// Uniform
-			unit addUniform "U_B_CombatUniform_mcam_vest";
+			unit addUniform "U_B_CombatUniform_mcam";
 
 			// Backpack
 			unit addBackpack "B_AssaultPack_rgr";
@@ -35,7 +35,7 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 			unit addMagazines ["30Rnd_65x39_caseless_mag_Tracer", 12];
 
 			// PRIMARY WEAPON
-			unit addWeapon "arifle_MX_F";
+			unit addWeapon "arifle_MX_GL_F";
 
 			// PRIMARY WEAPON ATTACHMENTS
 			unit addPrimaryWeaponItem "optic_Hamr";

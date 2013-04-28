@@ -9,9 +9,9 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 
 // UNIT LOADOUT
 //
-//			Class: Basic Rifleman
-//			Primary Weapon: MX 
-//			Optics: Acog
+//			Class: Assault Rifleman
+//			Primary Weapon: M4  
+//			Optics: Holo+4xZoom
 //			Extras: Grenades
 
 
@@ -19,7 +19,7 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 			removeAllWeapons unit;
 
 			// Helmet / Soft Cover
-			unit addHeadgear "H_HelmetB";
+			unit addHeadgear "H_HelmetB_light";
 
 			// Carrier / Chestrig / Vest
 			unit addVest "V_PlateCarrier1_cbr";
@@ -28,17 +28,17 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 			unit addUniform "U_B_CombatUniform_mcam_vest";
 
 			// Backpack
-			unit addBackpack "B_AssaultPack_rgr";
+			unit addBackpack "B_AssaultPack_cbr";
 
 
 			// PRIMARY WEAPON MAGS 
-			unit addMagazines ["30Rnd_65x39_caseless_mag_Tracer", 12];
+			unit addMagazines ["FHQ_30Rnd_556x45_Stanag_Tracer_Red", 12];
 
 			// PRIMARY WEAPON
-			unit addWeapon "arifle_MX_F";
+			unit addWeapon "FHQ_M4A1_WDL";
 
 			// PRIMARY WEAPON ATTACHMENTS
-			unit addPrimaryWeaponItem "optic_Hamr";
+			unit addPrimaryWeaponItem "FHQ_optic_HWS_G33";
 			unit addPrimaryWeaponItem "acc_pointer_IR";
 
 
