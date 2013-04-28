@@ -66,9 +66,20 @@
 			box addItemCargo ["FHQ_M4_muzzle_snds_556_BLK", 10];
 			box addItemCargo ["FHQ_M4_muzzle_snds_556_TAN", 10];
 			box addItemCargo ["FHQ_M4_muzzle_snds_556_SNW", 10];
+
+			box addItemCargo ["FHQ_optic_ACOG", 10];
+			box addItemCargo ["FHQ_optic_AIM", 10];
+			box addItemCargo ["FHQ_optic_TWS3050", 10];
+			box addItemCargo ["FHQ_optic_HWS_G33", 10];
+			box addItemCargo ["FHQ_acc_ANPEQ15", 10];
+			box addItemCargo ["FHQ_acc_LLM01L", 10];
+			box addItemCargo ["FHQ_acc_LLM01F", 10];
+
 			box addMagazineCargo ["30rnd_556x45_STANAG",100];
 			box addMagazineCargo ["FHQ_30Rnd_556x45_Stanag_Tracer_Red",100];
 			box addMagazineCargo ["FHQ_30Rnd_556x45_Stanag_Tracer_Ir",100];
+
+
 
 			
 

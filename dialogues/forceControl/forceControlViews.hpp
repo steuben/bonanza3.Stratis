@@ -65,7 +65,7 @@
 				  movingEnable = true;
 				  
 				  controlsBackground[] = {"bgShapeLarge", "headlineBGWide", "btn_close_large" };
-				  controls[] = {"titleTeamAddInfantry", "subRifleman","subGrenadier","btn_riflemanBasic","btn_riflemanAssault","btn_riflemanHeavy","btn_grenadierBasic","btn_grenadierAssault","btn_grenadierHeavy"};
+				  controls[] = {"titleTeamAddInfantry", "subRifleman","subGrenadier","subAT","subMarksman","subMGunner","subMedic","subEngineer","btn_riflemanBasic","btn_riflemanAssault","btn_riflemanHeavy","btn_grenadierBasic","btn_grenadierAssault","btn_grenadierHeavy","btn_atBasic","btn_atHeavy","btn_atGuided","btn_marksmanBasic","btn_marksmanAssault","btn_marksmanLongrange","btn_mgunnerBasic","btn_mgunnerAssault","btn_mgunnerHeavy","btn_medicBasic","btn_medicAssault","btn_medicSpecialist","btn_engineerBasic","btn_engineerAssault","btn_engineerSpecialist"};
 				  
 				  objects[] = {};
 				  
