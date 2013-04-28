@@ -41,7 +41,7 @@
 			y = 0.45;
 			
 			text = "ADD INFANTRY";
-			action ="closeDialog 0; _ok = createDialog ""uiForceControlTeamAddInfantry"";";
+			action ="closeDialog 0;  [] execVM ""extras\forceControl\forceControlAddInfantryStateHandler.sqf""; _ok = createDialog ""uiForceControlTeamAddInfantry"";";
 		  };
 		  
 		  

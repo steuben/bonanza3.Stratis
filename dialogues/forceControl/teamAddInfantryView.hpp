@@ -32,7 +32,7 @@
 					y = 0.248;
 					
 					text = "BASIC";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addRiflemanBasic.sqf"";"
 					
 				};
 
