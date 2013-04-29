@@ -1,6 +1,6 @@
 
- // ASSAULT RIFLEMAN
-_unitClass = "B_Soldier_F";
+ // ASSAULT MACHINEGUNNER
+_unitClass = "B_soldier_AR_F";
 
 // CREATE
 _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
@@ -9,10 +9,10 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 
 // UNIT LOADOUT
 //
-//			Class: Assault Rifleman
-//			Primary Weapon: M4  
-//			Optics: Holo+4xZoom
-//			Extras: Grenades
+//			Class: Assault Machinegunner
+//			Primary Weapon: MX_SW 
+//			Optics: Holo
+//			Extras: None
 
 
 
@@ -25,20 +25,20 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 			unit addVest "V_PlateCarrier1_cbr";
 
 			// Uniform
-			unit addUniform "U_B_CombatUniform_mcam_vest";
+			unit addUniform "U_B_CombatUniform_mcam";
 
 			// Backpack
-			unit addBackpack "B_AssaultPack_cbr";
+			unit addBackpack "B_Kitbag_mcamo";
 
 
 			// PRIMARY WEAPON MAGS 
-			unit addMagazines ["FHQ_30Rnd_556x45_Stanag_Tracer_Red", 12];
+			unit addMagazines ["100Rnd_65x39_caseless_mag_Tracer", 8];
 
 			// PRIMARY WEAPON
-			unit addWeapon "FHQ_M4A1_WDL";
+			unit addWeapon "arifle_MX_SW_F";
 
 			// PRIMARY WEAPON ATTACHMENTS
-			unit addPrimaryWeaponItem "FHQ_optic_HWS_G33";
+			unit addPrimaryWeaponItem "optic_Holosight";
 			unit addPrimaryWeaponItem "acc_pointer_IR";
 
 
@@ -48,8 +48,7 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 
 			// LAUNCHER
 
-			// Grenades
-			unit addMagazines ["HandGrenade", 8];
+			// Grenadesunit addMagazines ["HandGrenade", 8];
 
 			// Items
 			unit addItem  "FirstAidKit";

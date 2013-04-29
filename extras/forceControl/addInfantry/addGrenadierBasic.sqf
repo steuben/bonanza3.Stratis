@@ -1,5 +1,5 @@
 
- // BASIC RIFLEMAN
+ // BASIC GRENADIER
 _unitClass = "B_Soldier_GL_F";
 
 // CREATE

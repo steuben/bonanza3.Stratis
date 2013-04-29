@@ -1,6 +1,6 @@
 
- // ASSAULT RIFLEMAN
-_unitClass = "B_Soldier_F";
+ // ASSAULT COMBAT MEDIC
+_unitClass = "B_medic_F";
 
 // CREATE
 _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
@@ -9,10 +9,10 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 
 // UNIT LOADOUT
 //
-//			Class: Assault Rifleman
+//			Class: Assault Combat Medic
 //			Primary Weapon: M4  
 //			Optics: Holo+4xZoom
-//			Extras: Grenades
+//			Extras: Medikit
 
 
 
@@ -28,14 +28,14 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 			unit addUniform "U_B_CombatUniform_mcam_vest";
 
 			// Backpack
-			unit addBackpack "B_AssaultPack_cbr";
+			unit addBackpack "B_AssaultPack_rgr_Medic";
 
 
 			// PRIMARY WEAPON MAGS 
 			unit addMagazines ["FHQ_30Rnd_556x45_Stanag_Tracer_Red", 12];
 
 			// PRIMARY WEAPON
-			unit addWeapon "FHQ_M4A1_WDL";
+			unit addWeapon "FHQ_M4A1_BLK";
 
 			// PRIMARY WEAPON ATTACHMENTS
 			unit addPrimaryWeaponItem "FHQ_optic_HWS_G33";
@@ -49,12 +49,12 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 			// LAUNCHER
 
 			// Grenades
-			unit addMagazines ["HandGrenade", 8];
 
 			// Items
 			unit addItem  "FirstAidKit";
 			unit addItem  "FirstAidKit";
 			unit addItem  "FirstAidKit";
+			unit addItem  "Medikit";
 
 			reload unit;
 

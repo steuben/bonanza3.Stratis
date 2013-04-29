@@ -176,7 +176,7 @@
 					y = 0.418;
 					
 					text = "GUIDED";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addATSpecialistGuided.sqf"";"
 					
 				};
 
@@ -207,7 +207,7 @@
 					y = 0.248;
 					
 					text = "BASIC";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addMarksmanBasic.sqf"";"
 					
 				};
 
@@ -221,7 +221,7 @@
 					y = 0.333;
 					
 					text = "ASSAULT";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addMarksmanAssault.sqf"";"
 					
 				}; 
 
@@ -280,7 +280,7 @@
 					y = 0.333;
 					
 					text = "ASSAULT";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addMGunnerAssault.sqf"";"
 					
 				}; 
 
@@ -324,7 +324,7 @@
 					y = 0.648;
 					
 					text = "BASIC";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addMedicBasic.sqf"";"
 					
 				};
 
@@ -338,7 +338,7 @@
 					y = 0.733;
 					
 					text = "ASSAULT";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addMedicAssault.sqf"";"
 					
 				}; 
 
@@ -382,7 +382,7 @@
 					y = 0.648;
 					
 					text = "BASIC";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addEngineerBasic.sqf"";"
 					
 				};
 
@@ -396,7 +396,7 @@
 					y = 0.733;
 					
 					text = "ASSAULT";
-					action = ""
+					action = "[] execVM ""extras\forceControl\addInfantry\addEngineerAssault.sqf"";"
 					
 				}; 
 
@@ -413,5 +413,3 @@
 					action = ""
 					
 				};
-
-
