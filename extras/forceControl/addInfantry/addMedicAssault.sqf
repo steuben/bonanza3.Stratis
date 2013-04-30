@@ -28,7 +28,7 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 			unit addUniform "U_B_CombatUniform_mcam_vest";
 
 			// Backpack
-			unit addBackpack "B_AssaultPack_rgr_Medic";
+			unit addBackpack "B_AssaultPack_blk";
 
 
 			// PRIMARY WEAPON MAGS 

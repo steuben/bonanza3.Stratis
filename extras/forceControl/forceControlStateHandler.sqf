@@ -22,7 +22,14 @@ sleep 0.02;
 			ctrlEnable [302, false];
 		
 		// TEAM, only enabled in base
-		ctrlEnable [400, enable];
+		if (player distance commanderReich < 50) then
+		{ 
+			ctrlEnable [400, enable];
+		};
+		if (player distance commanderReich > 50) then
+		{ 
+			ctrlEnable [400, false];
+		};
 		
 			// CLEAR TEAM
 			ctrlEnable [401, true];

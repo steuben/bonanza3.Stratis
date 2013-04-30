@@ -10,7 +10,7 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 // UNIT LOADOUT
 //
 //			Class: Basic Rifleman
-//			Primary Weapon: MX 
+//			Primary Weapon: MXM 
 //			Optics: Acog
 //			Extras: Grenades
 
@@ -35,7 +35,7 @@ _unitClass createUnit [infSpawn, group player, "unit = this;", 1, ""];
 			unit addMagazines ["30Rnd_65x39_caseless_mag_Tracer", 12];
 
 			// PRIMARY WEAPON
-			unit addWeapon "arifle_MX_F";
+			unit addWeapon "arifle_MXM_F";
 
 			// PRIMARY WEAPON ATTACHMENTS
 			unit addPrimaryWeaponItem "optic_Hamr";

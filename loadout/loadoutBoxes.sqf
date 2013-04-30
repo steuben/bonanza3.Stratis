@@ -51,6 +51,7 @@
 			box addWeaponCargo ["arifle_MXC_F",100];
 			box addWeaponCargo ["arifle_MX_SW_F",100];
 			box addWeaponCargo ["arifle_MXM_F",100];
+			box addWeaponCargo ["srifle_EBR_F",100];
 
 
 			// M4 pack by FHQ V1.3
@@ -150,6 +151,7 @@
 			box2 addWeaponCargo ["arifle_MXC_F",100];
 			box2 addWeaponCargo ["arifle_MX_SW_F",100];
 			box2 addWeaponCargo ["arifle_MXM_F",100];
+			box2 addWeaponCargo ["srifle_EBR_F",100];
 
 			// Magazines
 			box2 addMagazineCargo ["30Rnd_65x39_caseless_mag_Tracer",100];

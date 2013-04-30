@@ -12,6 +12,18 @@ class CfgNotifications
 		difficulty[] = {};  // Benötigter Schwierigkeitsgrad. Alle die hier eingetragen werden müssen erfüllt sein.
 	};
 
+	// General Notification
+
+	class alert
+			{
+				title = "Be Advised:";
+				iconPicture = "";
+				description = "%1";
+				duration = 7;
+				priority = 4;
+			};
+
+
 	// Task Notifications
 	
 			class TaskComplete

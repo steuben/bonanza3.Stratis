@@ -53,7 +53,7 @@ class Mission
 				class Item0
 				{
 					position[]={3273.47,4.9894242,5810.9551};
-					azimut=-134.32916;
+					azimut=-134.32899;
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
@@ -61,6 +61,7 @@ class Mission
 					rank="COLONEL";
 					skill=0.60000002;
 					text="commanderReich";
+					init="removeAllWeapons this; this unassignItem ""NVGoggles"";  this removeItem ""NVGoggles""; this addHeadgear ""H_MilCap_mcamo"";";
 				};
 			};
 			class Waypoints
@@ -270,6 +271,78 @@ class Mission
 			text="CCP";
 			type="n_med";
 			colorName="ColorBLUFOR";
+		};
+	};
+	class Sensors
+	{
+		items=4;
+		class Item0
+		{
+			position[]={3201.2041,1.4257349,5854.5068};
+			a=100;
+			b=10;
+			angle=-51.2076;
+			rectangular=1;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="this AND !objectiveAssigned;";
+			expActiv="[""alert"",""You are leaving the base without orders. Just saying.""] call bis_fnc_showNotification;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={3251.6736,7.3378224,5741.4185};
+			a=100;
+			b=10;
+			angle=37.155888;
+			rectangular=1;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="this AND !objectiveAssigned;";
+			expActiv="[""alert"",""You are leaving the base without orders. Just saying.""] call bis_fnc_showNotification;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={3323.9502,4.9811573,5786.9033};
+			a=100;
+			b=10;
+			angle=-50.2346;
+			rectangular=1;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="this AND !objectiveAssigned;";
+			expActiv="[""alert"",""You are leaving the base without orders. Just saying.""] call bis_fnc_showNotification; hint ""pups"";";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={3299.3389,12.527969,5854.8184};
+			a=100;
+			b=10;
+			angle=35.847305;
+			rectangular=1;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="this AND !objectiveAssigned;";
+			expActiv="[""alert"",""You are leaving the base without orders. Just saying.""] call bis_fnc_showNotification;";
+			class Effects
+			{
+			};
 		};
 	};
 };
