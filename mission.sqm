@@ -52,8 +52,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3273.47,4.9894242,5810.9551};
-					azimut=-134.32899;
+					position[]={3257.6072,4.4272432,5829.9058};
+					azimut=-141.70702;
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
@@ -66,11 +66,10 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
-					position[]={3271.7375,5.0179534,5808.3604};
-					type="HOLD";
+					position[]={3249.2429,4.848814,5821.4463};
 					speed="LIMITED";
 					combat="SAFE";
 					class Effects
@@ -80,9 +79,19 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={3273.47,4.9894242,5810.9551};
-					id=0;
-					name="commanderReich";
+					position[]={3270.3772,5.0423555,5806.5361};
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={3269.2749,5.0942149,5803.2266};
+					speed="LIMITED";
+					combat="SAFE";
 					class Effects
 					{
 					};
@@ -135,7 +144,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=12;
+		items=14;
 		class Item0
 		{
 			position[]={3253.7002,5.1592236,5800.3711};
@@ -253,6 +262,24 @@ class Mission
 			vehicle="Box_NATO_AmmoOrd_F";
 			skill=1;
 		};
+		class Item12
+		{
+			position[]={3275.46,5.3610182,5786.293};
+			azimut=34.516006;
+			id=15;
+			side="EMPTY";
+			vehicle="B_Hunter_RCWS_F";
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={3282.7791,5.3099303,5781.2256};
+			azimut=34.515999;
+			id=16;
+			side="EMPTY";
+			vehicle="B_Hunter_HMG_F";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
@@ -271,78 +298,6 @@ class Mission
 			text="CCP";
 			type="n_med";
 			colorName="ColorBLUFOR";
-		};
-	};
-	class Sensors
-	{
-		items=4;
-		class Item0
-		{
-			position[]={3201.2041,1.4257349,5854.5068};
-			a=100;
-			b=10;
-			angle=-51.2076;
-			rectangular=1;
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="this AND !objectiveAssigned;";
-			expActiv="[""alert"",""You are leaving the base without orders. Just saying.""] call bis_fnc_showNotification;";
-			class Effects
-			{
-			};
-		};
-		class Item1
-		{
-			position[]={3251.6736,7.3378224,5741.4185};
-			a=100;
-			b=10;
-			angle=37.155888;
-			rectangular=1;
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="this AND !objectiveAssigned;";
-			expActiv="[""alert"",""You are leaving the base without orders. Just saying.""] call bis_fnc_showNotification;";
-			class Effects
-			{
-			};
-		};
-		class Item2
-		{
-			position[]={3323.9502,4.9811573,5786.9033};
-			a=100;
-			b=10;
-			angle=-50.2346;
-			rectangular=1;
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="this AND !objectiveAssigned;";
-			expActiv="[""alert"",""You are leaving the base without orders. Just saying.""] call bis_fnc_showNotification; hint ""pups"";";
-			class Effects
-			{
-			};
-		};
-		class Item3
-		{
-			position[]={3299.3389,12.527969,5854.8184};
-			a=100;
-			b=10;
-			angle=35.847305;
-			rectangular=1;
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="this AND !objectiveAssigned;";
-			expActiv="[""alert"",""You are leaving the base without orders. Just saying.""] call bis_fnc_showNotification;";
-			class Effects
-			{
-			};
 		};
 	};
 };

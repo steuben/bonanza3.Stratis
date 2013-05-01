@@ -17,8 +17,9 @@ class CfgNotifications
 	class alert
 			{
 				title = "Be Advised:";
-				iconPicture = "";
+				iconPicture = "\A3\ui_f\data\map\MapControl\lighthouse_ca.paa";
 				description = "%1";
+				color[] = {1,0.65,0.65,1};
 				duration = 7;
 				priority = 4;
 			};

@@ -54,7 +54,7 @@ deleteVehicle _bluforDetector;
 gnrf_globalTask setTaskState "Succeeded"; 
 
 //Task Notification
-["TaskComplete",["The objective has been seized.",_name]] call bis_fnc_showNotification;
+["TaskComplete",["Objective seized.",_name]] call bis_fnc_showNotification;
 commanderReich sideChat "Outstanding, BONANZA! Objective completed, Return to Base. LONGSWORD out.";
 
 // clean up
