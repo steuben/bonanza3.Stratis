@@ -15,15 +15,15 @@ _debugHideMenu_act = player addAction [("<t color=""#4693FF"">" + ("Hide Debug O
 	
 }],0,false,true,"","gnrf_debugMenu AND debugModeOn"];
 
-/*
+
 //execute code from clipboard
 _testCode_act = player addAction [("<t color=""#1F67CC"">" + ("Test Code") + "</t>"),"gen_action.sqf",[{
 	
 	_string = copyFromClipboard;
 	call compile _string;
 	
-}],0,false, false,"","gnrf_debugMenu AND debugModeOn"];
-*/
+}],0,false, false,"","gnrf_debugMenu AND debugModeOn AND !isMultiplayer"];
+
 
 //copy Map coords to clipboard via mouseklick
 _coordMode_act = player addAction [("<t color=""#1F67CC"">" + ("Save Map Pos") + "</t>"),"gen_action.sqf",[{	
