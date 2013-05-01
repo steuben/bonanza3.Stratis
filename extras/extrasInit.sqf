@@ -16,7 +16,6 @@ if (!isDedicated) then
 	[] execVM "extras\mapTool.sqf";
 	[] execVM "extras\assman\assmanInit.sqf";
 	[] execVM "extras\forceControl\forceControlInit.sqf";
-	[] call gnrf_fnc_ccpActions;
 	
 	if ((paramsArray select 0) == 1) then 
 	{
