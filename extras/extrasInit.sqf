@@ -61,4 +61,5 @@ gnrf_respawnInfo = [[hunter, 10], [atv1, 10],[atv2, 10]];
 higherCommand = group commanderReich;
 commanderReich setGroupID ["LONGSWORD","GroupColor4"];
 
-
+//precompile
+gnrf_fnc_taskHandling = compile preProcessFileLineNumbers "objectives\assault_typeA\taskhandling.sqf";
